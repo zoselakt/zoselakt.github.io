@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 클론3탄 </title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/album/">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css"/>
+
+    <!-- <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script> -->
+</head>
+<body>
+    <!--탑버튼-->
+    <div class="back-to-top">
+        <a href="#intro">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="18px" height="18px"><path d="M0 0h24v24H0z" fill="none"/><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+        </a>
+    </div>
+    <!--탑버튼-->
+    <!--탑 메뉴-->
+    <input type="checkbox" id="gnbcheck" name="gnbcheck">
+    <header id="header">
+        <label for="gnbcheck" id="gnbbtn"><span></span><span></span><span></span></label>
+        <h1 id="top-logo">
+            <img src="./img/logo_img.png" alt="">
+        </h1>
+        <nav id="gnb">
+            <label for="gnbcheck" id="mobile-close-btn"></label>
+            <ul class="topgnb">
+                <li><a href="#intro">카테고리</a></li>
+                <li><a href=".category">지점안내</a></li>
+                <li><a href="#healthy">수강신청</a></li>
+                <li><a href="#myskill">공지사항/이벤트</a></li>
+            </ul>
+            <ul class="login">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#" class="cart">장바구니</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--탑 메뉴-->
+    <main>
+        <!--메인배너-->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#"><img src="./img/메인배너1.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./img/메인배너2.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./img/메인배너3.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./img/메인배너4.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./img/메인배너5.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./img/메인배너6.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./img/메인배너7.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./img/메인배너8.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./img/메인배너9.jpg" alt=""></a></div>
+            </div>
+            <!-- ADD PAGINATION -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script type="text/javascript">
+            var swiper = new Swiper(".mySwiper", {
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        </script>
+        <!--메인배너-->
+        <div class="category">
+            <h2 class="mainh2">CATEGORY LIST</h2>
+            <ul>
+                <li><a href="#"><img src="./img/main-cate.jpg"><span class="inner-text">Club<br>Originals</span></a></li>
+                <li><a href="#"><img src="./img/main-cate-2.jpg"><span class="inner-text">Arts</span></a></li>
+                <li><a href="#"><img src="./img/main-cate-3.jpg"><span class="inner-text">Economy</span></a></li>
+                <li><a href="#"><img src="./img/main-cate-4.jpg"><span class="inner-text">Dance&Exercise</span></a></li>
+                <li><a href="#"><img src="./img/main-cate-5.jpg"><span class="inner-text">Music*play</span></a></li>
+                <li><a href="#"><img src="./img/main-cate-6.jpg"><span class="inner-text">Drawing</span></a></li>
+                <li><a href="#"><img src="./img/main-cate-7.jpg"><span class="inner-text">Parents<br>education</span></a></li>
+                <li><a href="#"><img src="./img/main-cate-8.jpg"><span class="inner-text">WithMom</span></a></li>
+                <li><a href="#"><img src="./img/main-cate-9.jpg"><span class="inner-text">Kids&children</span></a></li>
+                <li><a href="#"><img src="./img/main-cate-10.jpg"><span class="inner-text">HomeCock</span></a></li>
+            </ul>
+        </div>
+        <div class="section_div">
+            <a href="#"><img src="./img/main-originals.png" alt=""></a>
+            <span class="txt">컬처클럽이 제공하는 퀄리티 클래스</span>
+        </div>
+
+        <div class="culture">
+            <h2 class="cultureclub">cultureclub <span>추천 컬처클럽클래스</span></h2>
+            <div class="tab-title">
+                <ul>
+                    <li><a href="#">All</a></li>
+                </ul>
+            </div>
+            <div class="tab-wrap">
+                <ul>
+                    <li><a href="#"><img src="./img/7f5883d5-173e-42b7-bfc2-bcd3618262aa.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./img/7f5883d5-173e-42b7-bfc2-bcd3618262aa.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./img/841a2ac2-30c9-4875-8232-821c4169a502.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./img/64c7e8ee-7f30-4857-936f-ec4664547c0b.png" alt=""></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">1차 저녁 재봉틀 아기용품 (화/18:50)</a></li>
+                    <li><a href="#">[6회]6/13개강> 손뜨개,아이용품만들기 월 10:10</a></li>
+                    <li><a href="#">아트와 놀면서 자라는-아트 큐(18~26개월) 화 11:20</a></li>
+                    <li><a href="#">[금17:30, 7/15~8/19] 놀면서 배우는 펀글리쉬 (초등1~3학년)</a></li>
+                </ul>
+                <ul>
+                    <li><h2 class="text">월 16:30-17:20 (06.13-08.29) 11회</h2><h3>138,000원</h3></li>
+                    <li><h2 class="text">토 16:00-16:50 (07.30-08.20) 4회</h2><h3>180,000원</h3></li>
+                    <li><h2 class="text">월 10:10-11:30 (06.13-07.18) 6회</h2><h3>180,000원</h3></li>
+                    <li><h2 class="text">월 16:30-17:20 (06.13-08.29) 11회</h2><h3>160,000원</h3></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="./img/02b30056-0703-4d17-97a6-ff43684d7be5.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./img/28c21af2-1de9-4535-a3e1-68705a85ff6f.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./img/4f7a55db-5761-4fb5-90a5-5309ab96bd4f.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./img/4f7a55db-5761-4fb5-90a5-5309ab96bd4f.jpg" alt=""></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">[10회]뮤지큐 음악동화(24~36개월)금12:10</a></li>
+                    <li><a href="#">차이홍과 함께하는 키즈 중국어 [월/16:30/6~7세]</a></li>
+                    <li><a href="#">[10회]뮤지큐 음악동화(24~36개월)금12:10</a></li>
+                    <li><a href="#">[초등방학특강-4회] 기타 기초 코드 배우기(토,10:00)</a></li>
+                </ul>
+                <ul>
+                    <li><h2 class="text">월 16:30-17:20 (06.13-08.29) 11회</h2><h3>68,000원</h3></li>
+                    <li><h2 class="text">토 16:00-16:50 (07.30-08.20) 4회</h2><h3>40,000원</h3></li>
+                    <li><h2 class="text">금 12:10-12:50 (06.03-08.05) 10회</h2><h3>130,000원</h3></li>
+                    <li><h2 class="text">월 16:30-17:20 (06.13-08.29) 11회</h2><h3>150,000원</h3></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="./img/02b30056-0703-4d17-97a6-ff43684d7be5.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./img/28c21af2-1de9-4535-a3e1-68705a85ff6f.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./img/4f7a55db-5761-4fb5-90a5-5309ab96bd4f.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./img/64c7e8ee-7f30-4857-936f-ec4664547c0b.png" alt=""></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">[초등방학특강-4회] 나는야 에디슨! 과학 이야기(8세~초등3학년)(토,14:00)</a></li>
+                    <li><a href="#">[할인][10회][월] 성장촉진 베이비 요가와 마사지 (2~6개월)</a></li>
+                    <li><a href="#">[4주]2차 베이비 마사지2~8개월(일/11:00) ※7/3~7/24</a></li>
+                    <li><a href="#">[할인][화] 하와이안 훌라와 벨리댄스(초등1~6학년)</a></li>
+                </ul>
+                <ul>
+                    <li><h2 class="text">월 16:30-17:20 (06.13-08.29) 11회</h2><h3>138,000원</h3></li>
+                    <li><h2 class="text">토 16:00-16:50 (07.30-08.20) 4회</h2><h3>164,000원</h3></li>
+                    <li><h2 class="text">금 12:10-12:50 (06.03-08.05) 10회</h2><h3>210,000원</h3></li>
+                    <li><h2 class="text">월 16:30-17:20 (06.13-08.29) 11회</h2><h3>190,000원</h3></li>
+                </ul>
+            </div>
+        </div>
+        <div class="oneday">
+            <h2 class="onedayh2">ONEDAY SPECIAL<span>인기 원데이 클래스</span></h2>
+        </div>
+        <div class="swiper botSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#"><img src="./img/64c7e8ee-7f30-4857-936f-ec4664547c0b.png"><h2>6/19(일)11:10 [동화]괴물이 사는 나라 (5~7세)</h2><h3>일 11:10-12:00 (06.19-06.19) 1회</h3></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./img/radius2.jpg"><h2>[특강]6/14(화)12:20 엄마표 수제 조청(성인)</h2><h3>화 12:20-13:10 (06.14-06.14) 1회</h3></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./img/radius3.jpg"><h2>[7/20][홈베이킹]소세지 페스츄리[성인/수/10:00]</h2><h3>수 10:00-11:30 (07.20-07.20) 1회</h3></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./img/radius4.jpg"><h2>[6/15][라탄공예]이소가스워머 만들기[성인/수/10:30]</h2><h3>수 10:30-12:00 (06.15-06.15) 1회</h3></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./img/radius5.jpg"><h2>수 10:30-12:00 (06.15-06.15) 1회</h2><h3>수 12:10-13:40 (06.15-06.15) 1회</h3></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./img/radius6.jpg"><h2>[6/15][마크라메]액자형 행잉 만들기[성인/수/12:10]</h2><h3>수 12:10-13:40 (06.15-06.15) 1회</h3></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./img/radius7.jpg"><h2>8/17(수)10:30 MZ세대의 소비트랜드 라이브커머스 플랫폼 시작하기(성인)</h2><h3>수 10:30-11:20 (08.17-08.17) 1회</h3></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./img/radius8.jpg"><h2>6/14(화) 천연화장품-그린티 로션 [성인/13:50]</h2><h3>화 13:50-15:00 (06.14-06.14) 1회</h3></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./img/radius9.jpg"><h2>7/6(수) 책에서도 알려주지 않은 재무 심리로 알아보는 보험테크 [성인/13:30]</h2><h3>수 13:30-14:50 (07.06-07.06) 1회</h3></a></div>
+            </div>
+            <!-- ADD PAGINATION -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script type="text/javascript">
+            var swiper = new Swiper(".botSwiper", {
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        </script>
+        <div class="little">
+            <h2 class="littleclub">LITTLE CLUB <span>추천 리틀클럽클래스</span></h2>
+            <div class="tab-title">
+                <ul>
+                    <li><a href="#">All</a></li>
+                </ul>
+            </div>
+            <div class="tab-wrap">
+                <ul>
+                    <li><a href="#"><img src="./img/02b30056-0703-4d17-97a6-ff43684d7be5.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./img/28c21af2-1de9-4535-a3e1-68705a85ff6f.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./img/4f7a55db-5761-4fb5-90a5-5309ab96bd4f.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./img/4f7a55db-5761-4fb5-90a5-5309ab96bd4f.jpg" alt=""></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">[할인][화] 하와이안 훌라와 벨리댄스(초등1~6학년)</a></li>
+                    <li><a href="#">[초등방학특강-4회] 아이돌 댄스 1절 2곡 배우기(토, 16:00)</a></li>
+                    <li><a href="#">[10회]뮤지큐 음악동화(24~36개월)금12:10</a></li>
+                    <li><a href="#">[초등방학특강-4회] 기타 기초 코드 배우기(토,10:00)</a></li>
+                </ul>
+                <ul>
+                    <li><h2 class="text">금 12:10-12:50 (06.03-08.05) 10회</h2><h3>118,000원</h3></li>
+                    <li><h2 class="text">토 16:00-16:50 (07.30-08.20) 4회</h2><h3>150,000원</h3></li>
+                    <li><h2 class="text">토 10:00-10:50 (07.30-08.20) 4회</h2><h3>90,000원</h3></li>
+                    <li><h2 class="text">화 18:00-18:50 (06.07-08.23) 12회</h2><h3>160,000원</h3></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="./img/02b30056-0703-4d17-97a6-ff43684d7be5.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./img/28c21af2-1de9-4535-a3e1-68705a85ff6f.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./img/4f7a55db-5761-4fb5-90a5-5309ab96bd4f.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./img/4f7a55db-5761-4fb5-90a5-5309ab96bd4f.jpg" alt=""></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">차이홍과 함께하는 키즈 중국어 [월/16:30/6~7세]</a></li>
+                    <li><a href="#">[6회]6/13개강> 손뜨개,아이용품만들기 월 10:10</a></li>
+                    <li><a href="#">[할인][10회][월] 성장촉진 베이비 요가와 마사지 (2~6개월)</a></li>
+                    <li><a href="#">[금17:30, 7/15~8/19] 놀면서 배우는 펀글리쉬 (초등1~3학년)</a></li>
+                </ul>
+                <ul>
+                    <li><h2 class="text">토 14:00-14:50 (07.02-07.23) 4회</h2><h3>52,000원</h3></li>
+                    <li><h2 class="text">화 10:30-11:10 (06.07-08.23) 12회</h2><h3>105,000원</h3></li>
+                    <li><h2 class="text">월 10:10-11:30 (06.13-07.18) 6회</h2><h3>36,000원</h3></li>
+                    <li><h2 class="text">월 14:20-15:00 (06.13-08.22) 10회</h2><h3>120,000원</h3></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="./img/02b30056-0703-4d17-97a6-ff43684d7be5.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./img/28c21af2-1de9-4535-a3e1-68705a85ff6f.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./img/4f7a55db-5761-4fb5-90a5-5309ab96bd4f.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./img/4f7a55db-5761-4fb5-90a5-5309ab96bd4f.jpg" alt=""></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">[초등방학특강-4회] 나는야 에디슨! 과학 이야기(8세~초등3학년)(토,14:00)</a></li>
+                    <li><a href="#">[6회]6/13개강> 손뜨개,아이용품만들기 월 10:10</a></li>
+                    <li><a href="#">아트와 놀면서 자라는-아트 큐(18~26개월) 화 11:20</a></li>
+                    <li><a href="#">[4주]2차 베이비 마사지2~8개월(일/11:00) ※7/3~7/24)</a></li>
+                </ul>
+                <ul>
+                    <li><h2 class="text">토 16:00-16:50 (07.30-08.20) 4회</h2><h3>138,000원</h3></li>
+                    <li><h2 class="text">화 18:00-18:50 (06.07-08.23) 12회</h2><h3>160,000원</h3></li>
+                    <li><h2 class="text">일 11:00-11:40 (07.03-07.24) 4회</h2><h3>170,000원</h3></li>
+                    <li><h2 class="text">월 16:30-17:20 (06.13-08.29) 11회</h2><h3>160,000원</h3></li>
+                </ul>
+            </div>
+        </div>
+        <div class="event">
+            <h2 class="eventh2">EVENT</h2>
+            <ul class="eventul">
+                <li class="event_item"><a href="#">전체</a><h2>[2022여름] 퓨토 디즈니 강좌 수강생 대상 특별혜택</h2><p>2022. 05. 12.</p></li>
+                <li class="event_item"><a href="#">전체</a><h2>컬처클럽(문화센터) & 맘키즈 행사안내</h2><p>2022. 05. 16.</p></li>
+                <li class="event_item"><a href="#">전체</a><h2>[2022여름] Club Sellev. 접수 시작! </h2><p>2022. 05. 20.</p></li>
+                <li class="event_item"><a href="#">전체</a><h2>[서수원점] 기구 필라테스 강좌안내</h2><p>2022. 05. 25.</p></li>
+            </ul>
+        </div>
+        <div class="lastitem">
+            <div class="catalog">
+                <h2 class="catalogh2">E-CATALOG</h2>
+                <a href="#"><img src="./img/메인배너3.jpg" alt=""></a>
+            </div>
+            <div class="notice">
+                <h2 class="noticeh2">NOTICE</h2>
+                <a href="#"><img src="./img/right.png" alt=""></a>
+                <h3 class="noticeh3"><a href="#">컬처클럽 홈페이지 접속안내</a></h3>
+                <p class="noticep">2022.04.22</p>
+                <a href="#"><img src="./img/right.png" alt=""></a>
+                <h3 class="noticeh3"><a href="#">강좌 접수시 유의사항 안내</a></h3>
+                <p class="noticep">2022.04.26</p>
+                <a href="#"><img src="./img/right.png" alt=""></a>
+                <h3 class="noticeh3"><a href="#">교재 구매시 입금방법 및 배송안내</a></h3>
+                <p class="noticep">2022.04.30</p>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="column footer-logo">
+                        <img src="./img/img_header_logo.png">
+                    </div>
+                    <div class="column">
+                        <h4>siteMap</h4>
+                        <ul>
+                            <li><a href="#intro">Home</a></li>
+                            <li><a href="#menu-section">menu</a></li>
+                            <li><a href="#healthy">healthy</a></li>
+                            <li><a href="#myskill">menu2</a></li>
+                            <li><a href="#mybrand">mybrand</a></li>
+                            <li><a href="#magazine">magazine</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>Contact Us</h4>
+                        <p>
+                            A108 Adam street <br>
+                            New York, NY 535022 <br>
+                            United states <br>
+                            <strong>Phone : </strong> <a href="tel:+82-10-1111-2222">+82-010-1234-5678</a>
+                            <strong>Email : </strong><a href="mailto:kd66@naver.com">MyMail</a>
+                        </p>
+                    </div>
+                    <div class="column news">
+                        <h4>News</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consectetur expedita, dolorum laudantium aspernatur atque incidunt nobis porro, omnis nam totam rem, excepturi modi quidem sint commodi perspiciatis sapiente. Laborum.</p>
+                        <form><input type="text" name="search"><input type="submit" value="search"></form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                &copy;copyright<strong>MyPage</strong> .All Right Reserved
+            </div>
+            <div class="credits">
+                Disign By <a href="mailto:kd66@naver.com">MySelf</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

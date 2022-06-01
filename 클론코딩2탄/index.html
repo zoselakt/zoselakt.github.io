@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 클론2탄 </title>
+    <link rel="stylesheet" href="./css/initial.min.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+</head>
+<body>
+    <div class="back-to-top">
+        <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="18px" height="18px"><path d="M0 0h24v24H0z" fill="none"/><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+        </a>
+    </div>
+    <div class="right_fixbox">
+        <div class="chatting">
+            <button type="button" class="chat_btn"><span class="text">최근본상품</span></button>
+            <a href="#" class="hobby"><img src="./img/djatjs1.png"></a>
+        </div>
+    </div>
+    <!--mobile-->
+    <input type="checkbox" id="gnbcheck" name="gnbcheck">
+    <header id="header">
+        <label for="gnbcheck" id="gnbbtn"><span></span><span></span><span></span></label>
+        <h1 id="top-logo">
+            <img src="./img/logo_img.png" alt="">
+        </h1>
+        <nav id="gnb">
+            <label for="gnbcheck" id="mobile-close-btn"></label>
+            <ul class="category">
+                <li><a href="#intro">케어식단</a></li>
+                <li><a href="#menu-section">베스트</a></li>
+                <li><a href="#healthy">할인</a></li>
+                <li><a href="#myskill">브랜드관</a></li>
+                <li><a href="#mybrand">기획전</a></li>
+                <li><a href="#magazine">선물추천</a></li>
+                <li><a href="#">이벤트</a></li>
+            </ul>
+            <ul class="login">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#" class="cart">장바구니</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <article>
+                <p>5월 가정의달 스페셜</p>
+                <h2>소중한분께 마음을 선물하세요. </h2>
+                <a href="#myprofile" class="button">추천상품</a>
+            </article>
+        </section>
+        <section id="menu-section">
+            <div class="row">
+                <div class="text">
+                    <p>건강은 밥상으로부터</p>
+                    <h2>그리팅이 자신있게 추천드려요</h2>
+                    <ul class="menu">
+                        <li><a href="#">건강반찬</a></li>
+                        <li><a href="#">진한 국/찌개</a></li>
+                        <li><a href="#">자연 담은 면</a></li>
+                        <li><a href="#">영양가득 밥/죽</a></li>
+                        <li><a href="#">샐러드/샌드위치</a></li>
+                        <li><a href="#">베이커리</a></li>
+                        <li><a href="#">착한 간식/음료</a></li>
+                    </ul>
+                    <ul class="menu">
+                        <li><a href="#">1Table</a></li>
+                        <li><a href="#">안심 키즈</a></li>
+                        <li><a href="#">시니어 건강</a></li>
+                        <li><a href="#">비건</a></li>
+                        <li><a href="#">라이프</a></li>
+                        <li><a href="#">반찬 정기구독</a></li>
+                        <li><a href="#">스페셜 패키지</a></li>
+                        <li><a href="#">가정의달 선물</a></li>
+                    </ul>
+                </div>
+                <div class="img">
+                    <ul class="img-wrap">
+                        <li>
+                            <a href="#"><img src="./img/menu1.jpg" alt="img01"></a>
+                            <div class="img-text">
+                                <span class="spantop">조리명인이 만들어 깔끔하고 상큼한</span>
+                                <span class="spanbot">제주청귤소바</span>
+                                <span class="spanprice">10,500원</span>
+                            </div>
+                            <button type="button" class="listbutton">
+                                <span class="cart"></span>
+                            </button>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/menu2.jpg" alt="img02"></a>
+                            <div class="img-text">
+                                <span class="spantop">조리명인이 만들어 깔끔하고 상큼한</span>
+                                <span class="spanbot">제주청귤소바</span>
+                                <span class="spanprice">10,500원</span>
+                            </div>
+                            <button type="button" class="listbutton">
+                                <span class="cart"></span>
+                            </button>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/menu3.jpg" alt="img03"></a>
+                            <div class="img-text">
+                                <span class="spantop">조리명인이 만들어 깔끔하고 상큼한</span>
+                                <span class="spanbot">제주청귤소바</span>
+                                <span class="spanprice">10,500원</span>
+                            </div>
+                            <button type="button" class="listbutton">
+                                <span class="cart"></span>
+                            </button>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/menu4.jpg" alt="img04"></a>
+                            <div class="img-text">
+                                <span class="spantop">조리명인이 만들어 깔끔하고 상큼한</span>
+                                <span class="spanbot">제주청귤소바</span>
+                                <span class="spanprice">10,500원</span>
+                            </div>
+                            <button type="button" class="listbutton">
+                                <span class="cart"></span>
+                            </button>
+                        </li>
+                    </ul>
+                    <ul class="img-wrap">
+                        <li>
+                            <a href="#"><img src="./img/menu5.jpg" alt="img05"></a>
+                            <div class="img-text">
+                                <span class="spantop">조리명인이 만들어 깔끔하고 상큼한</span>
+                                <span class="spanbot">제주청귤소바</span>
+                                <span class="spanprice">10,500원</span>
+                            </div>
+                            <button type="button" class="listbutton">
+                                <span class="cart"></span>
+                            </button>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/menu6.jpg" alt="img06"></a>
+                            <div class="img-text">
+                                <span class="spantop">조리명인이 만들어 깔끔하고 상큼한</span>
+                                <span class="spanbot">제주청귤소바</span>
+                                <span class="spanprice">10,500원</span>
+                            </div>
+                            <button type="button" class="listbutton">
+                                <span class="cart"></span>
+                            </button>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/menu7.jpg" alt="img07"></a>
+                            <div class="img-text">
+                                <span class="spantop">조리명인이 만들어 깔끔하고 상큼한</span>
+                                <span class="spanbot">제주청귤소바</span>
+                                <span class="spanprice">10,500원</span>
+                            </div>
+                            <button type="button" class="listbutton">
+                                <span class="cart"></span>
+                            </button>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/menu8.jpg" alt="img08"></a>
+                            <div class="img-text">
+                                <span class="spantop">조리명인이 만들어 깔끔하고 상큼한</span>
+                                <span class="spanbot">제주청귤소바</span>
+                                <span class="spanprice">10,500원</span>
+                            </div>
+                            <button type="button" class="listbutton">
+                                <span class="cart"></span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="more">
+                    <a href="#">더 많은 상품 알아보기</a>
+                </div>
+            </div>
+        </section>
+        <div id="middlebanner">
+            <div class="mid-wrap">
+                <div class="midimg">
+                    <img src="./img/midimg.jpg">
+                </div>
+                <div class="midtext">
+                    <h2>역대급 혜택! <br>최대 10만원 쿠폰팩</h2>
+                    <a href="#" class="button">바로가기</a>
+                </div>
+            </div>
+        </div>
+        <section id="healthy"><!-- carousel -->
+            <div class="goodok"> <!--carousel-inner-->
+                <p>매일 바뀌는 메뉴로 지속가능한 관리</p>
+                <h2>케이식단 정기구독</h2>
+                <div id="carousel-wrap">
+                    <p id="carousel-prev" class="prev btn"><img src="./img/left.png" alt="prev"></p>
+                    <p id="carousel-next" class="next btn"><img src="./img/right.png" alt="next"></p>
+                    <div id="carousel"><!--화면에 보여지는 영역-->
+                        <div id="carousel-inner">
+                            <ul class="column">
+                                <li><a href="#"><img src="./img/menu1.jpg" alt=""></a><p>당질 제한 레시피</p><h3>저당식단</h3></li>
+                                <li><a href="#"><img src="./img/menu1.jpg" alt=""></a><p>당질 제한 레시피</p><h3>저당식단</h3></li>
+                                <li><a href="#"><img src="./img/menu1.jpg" alt=""></a><p>당질 제한 레시피</p><h3>저당식단</h3></li>
+                                <li><a href="#"><img src="./img/menu1.jpg" alt=""></a><p>당질 제한 레시피</p><h3>저당식단</h3></li>
+                                <li><a href="#"><img src="./img/menu1.jpg" alt=""></a><p>당질 제한 레시피</p><h3>저당식단</h3></li>
+                                <li><a href="#"><img src="./img/menu1.jpg" alt=""></a><p>당질 제한 레시피</p><h3>저당식단</h3></li>
+                            </ul>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="foodplan">
+                <p>빠르고 확실한 목표가 있다면</p>
+                <h2>6일 완성 챌린지 식단</h2>
+                <div id="carousel1-wrap">
+                    <p id="carousel1-prev" class="prev btn"><img src="./img/left.png" alt="prev"></p>
+                    <p id="carousel1-next" class="next btn"><img src="./img/right.png" alt="next"></p>
+                    <div id="carousel1"><!--화면에 보여지는 영역-->
+                        <div id="carousel1-inner">
+                            <ul class="column1">
+                                <li><a href="#"><img src="./img/menu2.jpg" alt=""></a><p>당질 제한 레시피</p><h3>저당식단</h3></li>
+                                <li><a href="#"><img src="./img/menu2.jpg" alt=""></a><p>당질 제한 레시피</p><h3>저당식단</h3></li>
+                                <li><a href="#"><img src="./img/menu2.jpg" alt=""></a><p>당질 제한 레시피</p><h3>저당식단</h3></li>
+                                <li><a href="#"><img src="./img/menu2.jpg" alt=""></a><p>당질 제한 레시피</p><h3>저당식단</h3></li>
+                                <li><a href="#"><img src="./img/menu2.jpg" alt=""></a><p>당질 제한 레시피</p><h3>저당식단</h3></li>
+                                <li><a href="#"><img src="./img/menu2.jpg" alt=""></a><p>당질 제한 레시피</p><h3>저당식단</h3></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="middlebanner">
+            <div class="mid-sec">
+                <div class="backimg2">
+                    <img src="./img/midimg2.jpg">
+                </div>
+                <div class="midtext">
+                    <a href="#" class="button">바로가기</a>
+                </div>
+            </div>
+        </div>
+        <section id="myskill">
+            <div class="row">
+                <div class="skill-wrap">
+                    <h2>우리집 밥상주의</h2>
+                    <div class="leftimg-text">
+                        <img src="./img/skill-left.jpg" alt="img01">
+                    </div>
+                    <div class="slide">
+                        <div class="slideimg">
+                            <a href="./img/skill-right1.gif"><img src="./img/skill-right1.gif" alt="img01"></a>
+                            <a href="./img/skill-right2.jpg"><img src="./img/skill-right2.jpg" alt="img02"></a>
+                            <a href="./img/skill-right3.jpg"><img src="./img/skill-right3.jpg" alt="img03"></a>
+                        </div>
+                        <div class="slidetext">
+                            <p>부드러운 탄산과 향긋한 풍미</p>
+                            <a href="#">[르쁘띠 샤방] 논알콜 스파클링 와인 2종</a>
+                            <del><p>13,500원</p></del>
+                            <h5>12,150원</h5>
+                            <button type="button" class="listbutton">
+                                <span class="cart"></span>
+                            </button>
+                        </div>
+                        <div class="slidetext">
+                            <p>부드러운 탄산과 향긋한 풍미</p>
+                            <a href="#">[르쁘띠 샤방] 논알콜 스파클링 와인 2종</a>
+                            <del><p>13,500원</p></del>
+                            <h5>12,150원</h5>
+                            <button type="button" class="listbutton">
+                                <span class="cart"></span>
+                            </button>
+                        </div>
+                        <div class="slidetext">
+                            <p>부드러운 탄산과 향긋한 풍미</p>
+                            <a href="#">[르쁘띠 샤방] 논알콜 스파클링 와인 2종</a>
+                            <del><p>13,500원</p></del>
+                            <h5>12,150원</h5>
+                            <button type="button" class="listbutton">
+                                <span class="cart"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="skillimg">
+                        <h2>깐깐하게 엄선된 신상품</h2>
+                        <ul class="img-wrap">
+                            <li>
+                                <a href="#"><img src="./img/menu1.jpg" alt="img01"></a>
+                                <div class="img-text">
+                                    <span class="spantop">조리명인이 만들어 깔끔하고 상큼한</span>
+                                    <span class="spanbot">제주청귤소바</span>
+                                    <span class="spanprice">10,500원</span>
+                                </div>
+                                <button type="button" class="listbutton">
+                                    <span class="cart"></span>
+                                </button>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./img/menu2.jpg" alt="img02"></a>
+                                <div class="img-text">
+                                    <span class="spantop">조리명인이 만들어 깔끔하고 상큼한</span>
+                                    <span class="spanbot">제주청귤소바</span>
+                                    <span class="spanprice">10,500원</span>
+                                </div>
+                                <button type="button" class="listbutton">
+                                    <span class="cart"></span>
+                                </button>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./img/menu3.jpg" alt="img03"></a>
+                                <div class="img-text">
+                                    <span class="spantop">조리명인이 만들어 깔끔하고 상큼한</span>
+                                    <span class="spanbot">제주청귤소바</span>
+                                    <span class="spanprice">10,500원</span>
+                                </div>
+                                <button type="button" class="listbutton">
+                                    <span class="cart"></span>
+                                </button>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./img/menu4.jpg" alt="img04"></a>
+                                <div class="img-text">
+                                    <span class="spantop">조리명인이 만들어 깔끔하고 상큼한</span>
+                                    <span class="spanbot">제주청귤소바</span>
+                                    <span class="spanprice">10,500원</span>
+                                </div>
+                                <button type="button" class="listbutton">
+                                    <span class="cart"></span>
+                                </button>
+                            </li>
+                        </ul>
+                        <ul class="img-wrap">
+                            <li>
+                                <a href="#"><img src="./img/menu5.jpg" alt="img05"></a>
+                                <div class="img-text">
+                                    <span class="spantop">조리명인이 만들어 깔끔하고 상큼한</span>
+                                    <span class="spanbot">제주청귤소바</span>
+                                    <span class="spanprice">10,500원</span>
+                                </div>
+                                <button type="button" class="listbutton">
+                                    <span class="cart"></span>
+                                </button>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./img/menu6.jpg" alt="img06"></a>
+                                <div class="img-text">
+                                    <span class="spantop">조리명인이 만들어 깔끔하고 상큼한</span>
+                                    <span class="spanbot">제주청귤소바</span>
+                                    <span class="spanprice">10,500원</span>
+                                </div>
+                                <button type="button" class="listbutton">
+                                    <span class="cart"></span>
+                                </button>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./img/menu7.jpg" alt="img07"></a>
+                                <div class="img-text">
+                                    <span class="spantop">조리명인이 만들어 깔끔하고 상큼한</span>
+                                    <span class="spanbot">제주청귤소바</span>
+                                    <span class="spanprice">10,500원</span>
+                                </div>
+                                <button type="button" class="listbutton">
+                                    <span class="cart"></span>
+                                </button>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./img/menu8.jpg" alt="img08"></a>
+                                <div class="img-text">
+                                    <span class="spantop">조리명인이 만들어 깔끔하고 상큼한</span>
+                                    <span class="spanbot">제주청귤소바</span>
+                                    <span class="spanprice">10,500원</span>
+                                </div>
+                                <button type="button" class="listbutton">
+                                    <span class="cart"></span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="mybrand">
+            <div class="goodok">
+                <h2>그리팅이 고른 착한 브랜드</h2>
+                <img src="./img/left.png" alt="prev" class="btn prev">
+                <img src="./img/right.png" alt="next" class="btn next">
+                    <div class="column">
+                        <div class="inner">
+                            <a href="#"><img src="./img/mybrand1.jpg" alt="img01"></a>
+                            <h3>정관장</h3>
+                            <p>건강을 담은 선물</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="inner">
+                            <a href="#"><img src="./img/mybrand2.jpg" alt="img01"></a>
+                            <h3>좋은술</h3>
+                            <p> 천년의 시간을 이어 내려온 향</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="inner">
+                            <a href="#"><img src="./img/mybrand3.jpg" alt="img01"></a>
+                            <h3>오미나라</h3>
+                            <p>오미자 향기 가득한 오미나라</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="inner">
+                            <a href="#"><img src="./img/mybrand4.jpg" alt="img01"></a>
+                            <h3>바다자리</h3>
+                            <p>제철 수산물을 집앞까지</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="magazine">
+            <div class="row">
+                <h2>그리팅 매거진</h2>
+                <img src="./img/left.png" alt="prev" class="btn prev">
+                <img src="./img/right.png" alt="next" class="btn next">
+                <div class="column">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><a href="#"><img src="./img/magazine1.jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href="#"><img src="./img/magazine2.jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href="#"><img src="./img/magazine3.jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href="#"><img src="./img/magazine4.jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href="#"><img src="./img/magazine5.jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href="#"><img src="./img/magazine6.jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href="#"><img src="./img/magazine7.jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href="#"><img src="./img/magazine8.jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href="#"><img src="./img/magazine9.jpg" alt=""></a></div>
+                        </div>
+                        <!-- ADD PAGINATION -->
+                        <div class="swiper-pagination"></div>
+                      </div>
+                      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+                      <script type="text/javascript">
+                          var swiper = new Swiper(".mySwiper", {
+                              pagination:{
+                                  el: '.swiper-pagination',
+                                  clickable: true,
+                              },
+                          });
+                      </script>
+                </div>
+                <div class="bottom">
+                    <div class="text-left">
+                        <img src="" alt="">
+                        <h2>그리팅 TV</h2>
+                        <h3>경북 고령 고당도 하미과 멜론</h3>
+                        <p>달콤하고 아삭한 멜론의 황제</p>
+                        <a href="#">그리팅 유튜브 채널 구독하기</a>
+                    </div>
+                    <div class="img-right">
+                        <a href="#"><img src="./img/lastmelon.jpg" alt="img01"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="column footer-logo">
+                        <img src="./img/img_header_logo.png">
+                    </div>
+                    <div class="column">
+                        <h4>siteMap</h4>
+                        <ul>
+                            <li><a href="#intro">Home</a></li>
+                            <li><a href="#menu-section">menu</a></li>
+                            <li><a href="#healthy">healthy</a></li>
+                            <li><a href="#myskill">menu2</a></li>
+                            <li><a href="#mybrand">mybrand</a></li>
+                            <li><a href="#magazine">magazine</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>Contact Us</h4>
+                        <p>
+                            A108 Adam street <br>
+                            New York, NY 535022 <br>
+                            United states <br>
+                            <strong>Phone : </strong> <a href="tel:+82-10-1111-2222">+82-010-1234-5678</a>
+                            <strong>Email : </strong><a href="mailto:kd66@naver.com">MyMail</a>
+                        </p>
+                    </div>
+                    <div class="column news">
+                        <h4>News</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consectetur expedita, dolorum laudantium aspernatur atque incidunt nobis porro, omnis nam totam rem, excepturi modi quidem sint commodi perspiciatis sapiente. Laborum.</p>
+                        <form><input type="text" name="search"><input type="submit" value="search"></form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                &copy;copyright<strong>MyPage</strong> .All Right Reserved
+            </div>
+            <div class="credits">
+                Disign By <a href="mailto:kd66@naver.com">MySelf</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

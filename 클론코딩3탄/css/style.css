@@ -1,0 +1,551 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+*{margin: 0; padding: 0;}
+html, body{height: 100%;}
+ul, ol{list-style: none;}
+a{color: #666;}
+/*공통*/
+main{
+    min-width: 1180px;
+    margin: 0 auto;
+    width: 900px;
+}
+/*버튼*/
+.button{
+    font-size: 16px;
+    font-weight: 700;
+    height: 32px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 32px;
+    margin: 10px;
+    border-radius: 50px;
+    background: #18d26e;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.button:hover{
+    background: white;
+    color: #000;
+}
+/*버튼*/
+/*탑버튼*/
+.back-to-top{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    bottom: 10px;
+    background: #000;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.2);
+    transition: 1s;
+    opacity: 0;
+    z-index: 800;
+}
+.back-to-top a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+/*탑버튼*/
+/*햄버거*/
+input[type=checkbox]#gnbcheck{
+    display: none; /*인풋버튼 없애기*/
+}
+
+#gnbbtn{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 10px;
+    right: 10px;
+    z-index: 500;
+    display: none;
+}
+#gnbbtn > span{
+    position: absolute;
+    top: 16px;
+    height: 1.6px;
+    width: 32px;
+    background: #fff;
+    transform: rotateY(-50%);
+}
+#gnbbtn > span:nth-child(1){
+    top: 8px;
+}
+#gnbbtn > span:nth-child(3){
+    top: 24px;
+}
+/*모바일 close 버튼*/
+#mobile-close-btn{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 30px;
+    right: 10px;
+    display: none;
+}
+#mobile-close-btn::before, #mobile-close-btn::after{
+    content: '';
+    position: absolute;
+    height: 1.6px;
+    width: 32px; /*또는 100%*/
+    top: 16px;
+    background: #fff;
+    transform: translateY(-50%) rotate(45deg);
+}
+#mobile-close-btn::before{
+    transform: translateY(-50%) rotate(-45deg);
+}
+/*햄버거 끝*/
+/*타이틀*/
+.on{
+    opacity: 1;
+}
+/*공통*/
+/*해더*/
+#header{
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    top: 0;
+    z-index: 800;
+    display: flex;
+    background: #fff;
+}
+#header #top-logo{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 15%;
+    padding-right: 200px;
+}
+
+#header #top-logo a{
+    color: black;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    font-size: 24px;
+}
+#gnb{
+    float: right;
+    width: 1100px;
+    display: flex;
+}
+#gnb ul{
+    display: flex;
+}
+#gnb .topgnb li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+}
+#gnb .topgnb li:last-child{
+    padding-right: 100px;
+}
+#gnb ul li a{
+    display: flex;
+    line-height: 60px;
+    padding: 0 20px;
+    color: #000;
+    transition: .5s;
+    text-decoration: none;
+}
+#gnb ul li a:hover{color: #18d26e;}
+#gnb .login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#gnb .login li{
+    width: 110px;
+}
+
+/*해더 끝*/
+/*category*/
+.category ul{
+    display: flex;
+    justify-content: space-around;
+}
+.category ul li{
+    overflow: hidden;
+    display: inline-block;
+}
+.category li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.category li a img{
+    width: 100px;
+    height: 100px;
+}
+.category li a .inner-text{
+    position: absolute;
+    top: 530px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+/*category*/
+.section_div{
+    position: relative;
+    padding-top: 20px;
+}
+.section_div img{
+    width: 1200px;
+    height: 200px;
+}
+.section_div .txt{
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    font-weight: bold;
+    font-size: 20px;
+}
+/*culture little start*/
+.culture , .little{
+    overflow: hidden;
+}
+.culture .cultureclub > span, .little .littleclub > span{
+    font-size: 12px;
+    color: #333;
+}
+.tab-wrap{
+    padding-top: 10px;
+    width: 1200px;
+    height: 900px;
+}
+.tab-wrap ul{
+    display: flex;
+    justify-content: space-around;
+}
+.tab-wrap ul li{
+    display: inline-block;
+    width: 250px;
+    line-height: 20px;
+}
+.tab-wrap ul li a{
+    text-decoration: none;
+}
+.tab-wrap ul li .text{
+    font-size: 10px;
+    color: #666;
+}
+.tab-wrap ul li h3{
+    font-size: 12px;
+    color: #333;
+    padding-bottom: 30px;
+}
+.tab-wrap ul li a img{
+    width: 250px;
+    height: 180px;
+}
+/*culture, little end*/
+/*중간섹션 시작*/
+.tab-title{
+    border: 1px solid #000;
+    width: 1120px;
+    height: 101px;
+    margin: 10px 40px;
+}
+.tab-title ul{
+    display: inline-block;
+}
+.tab-title ul:first-child li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #000;
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+}
+.tab-title ul li{
+    display: inline-block;
+}
+.tab-title ul li a{
+    text-decoration: none;
+    tab-size: 25px;
+    font-weight: bold;
+}
+/*중간 섹션 끝*/
+/*event start*/
+.event{
+    width: 1160px;
+    overflow: hidden;
+}
+.event .eventul{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+.event .eventul .event_item{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    display: inline-block;
+    border: 1px solid #666;
+}
+.event .eventul .event_item:hover{
+    color: #000;
+    font-weight: bold;
+}
+.event .eventul .event_item a{
+    position: absolute;
+    border: 1px solid #666;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.event .eventul .event_item h2{
+    position: absolute;
+    top: 60px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.event .eventul .event_item p{
+    position: absolute;
+    bottom: 30px;
+    color: #666;
+    padding: 30px;
+}
+/*event end*/
+/*lastitem*/
+.lastitem{
+    width: 1140px;
+    height: 200px;
+    display: flex;
+}
+.catalog{
+    width: 51%;
+    overflow: hidden;
+    display: inline-block;
+    border-right: 1px solid rgba(0,0,0,.2);
+}
+.catalog img{
+    width: 450px;
+    height: 150px;
+    padding-left: 20px;
+}
+.notice{
+    width: 45%;
+    overflow: hidden;
+    padding-left: 20px;
+    line-height: 28px;
+    position: relative;
+}
+.notice a img{
+    float: right;    
+}
+.notice .noticeh2{
+    padding-bottom: 5px;
+}
+.notice .noticeh3 a{
+    text-decoration: none;
+}
+.notice .noticep{
+    color: #333;
+    font-size: 12px;
+}
+
+/*lastitem end*/
+/*swiper*/
+.swiper .swiper-wrapper .swiper-slide{
+    display: inline-block;
+    padding-top: 100px;
+    text-align: center;
+}
+.swiper.botSwiper .swiper-wrapper .swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    background: #fdfdf6;
+    height: 600px;
+}
+.swiper.botSwiper .swiper-wrapper .swiper-slide img{
+    border-radius: 100%;
+    padding-top: 80px;
+    width: 300px;
+    height: 300px;
+}
+.swiper.botSwiper .swiper-wrapper .swiper-slide a{
+    display: inline-block;
+    text-decoration: none;
+}
+/*swiper*/
+/*footer*/
+#footer{
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+}
+#footer .footer-top{
+    background: #111;
+    padding: 60px 0 30px;
+}
+#footer .container{
+    width: 1140px;
+    margin: 0 auto;
+}
+#footer > .container{
+    padding: 30px 0;
+    text-align: center;
+}
+#footer .container .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#footer .container .row .column{
+    flex: 25%;
+    padding: 0 10px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+#footer .container .row .column.footer-logo img{
+    width: 200px;
+    height: 200px;
+}
+#footer .container .row .column h4{
+    position: relative;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
+#footer .container .row .column h4::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 30px;
+    background: #555;
+}
+#footer .container .row .column h4::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 60px;
+    top: 30px;
+    left: 0;
+    background: #18d26e;
+}
+#footer .container .row .column ul li{
+    border-bottom: 1px solid #333;
+    padding: 10px 0;
+}
+#footer .container .row .column ul li:nth-child(1){
+    padding-top: 0;
+}
+#footer .container .row .column.news input[type=text]{
+    border: 0;
+    padding: 6px 8px;
+    width: 65%;
+}
+#footer .container .row .column.news input[type=submit]{
+    border: 0;
+    padding: 6px 0;
+    width: 35%;
+    background: #18d26e;
+    color: white;
+    cursor: pointer;
+}
+
+/*media쿼리*/
+@media screen and (max-width: 1240px ){
+    main{
+        min-width: 1200px;
+        width: 700px;
+    }
+    #header #top-logo{
+        padding: 10px;
+    }
+    #header #gnb{
+        width: 1200px;
+    }
+    #header #gnb:hover{
+        transition: 0.5s;
+    }
+    #header #gnb ul{
+        overflow: hidden;
+        width: 800px;
+    }
+    #header #gnb ul li{
+        font-size: 12px;
+        font-weight: bold;
+
+    }
+    #header #gnb ul li a{
+        width: 180px;
+    }
+    #header .login{
+        width: 100px;
+    }
+    .category{
+        flex: 100%;
+        flex-basis: auto;
+        flex-wrap: wrap;
+    }
+
+    #footer{
+        width: 1240px;
+    }
+    #footer .container{
+        width: 100%;
+    }
+    #footer .container .row .column{
+        flex: 50%;
+    }
+}
+@media screen and (max-width:767px) {
+    #footer .container .row .column{
+        flex: 100%;
+    }
+    input[type=checkbox]#gnbcheck:checked ~ #header #gnb{
+        left: 0;
+    }
+    #mobile-close-btn{
+        display: block;
+    }
+    #gnbbtn{
+        display: block;
+    }
+    #gnb{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: -100%;
+        width: 500px;
+        background: rgba(0,0,0,.8);
+        transition: .5s ease-in-out;
+        z-index: 600;
+    }
+    #gnb ul{
+        padding-top: 50px;
+    }
+    #gnb ul li{
+        width: 100%;
+        padding-left: 10px;
+        box-sizing: border-box;
+    }
+}

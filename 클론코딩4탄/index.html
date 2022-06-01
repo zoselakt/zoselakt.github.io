@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 클론4탄 </title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+
+    <!-- <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script> -->
+</head>
+<body>
+    <!--탑버튼-->
+    <div class="back-to-top">
+        <a href="#intro">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="18px" height="18px"><path d="M0 0h24v24H0z" fill="none"/><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+        </a>
+    </div>
+    <!--탑버튼-->
+    <!--탑 메뉴-->
+    <input type="checkbox" id="gnbcheck" name="gnbcheck">
+    <header id="header">
+        <label for="gnbcheck" id="gnbbtn"><span></span><span></span><span></span></label>
+        <h1 id="top-logo">
+            <a href="#"><img src="./img/logo_img.png" alt=""></a>
+        </h1>
+        <nav id="gnb">
+            <label for="gnbcheck" id="mobile-close-btn"></label>
+            <ul class="login">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">원격지원</a></li>
+                <li><a href="#">이용안내</a></li>
+            </ul>
+            <ul class="topgnb">
+                <li class="topgnbli">
+                    <a href="#intro">사업소개</a>
+                    <ul class="submenu">
+                        <li><a href="#">국민취업지원제도란</a></li>
+                        <li><a href="#">국민취업지원제도</a></li>
+                        <li><a href="#">지원 대상</a></li>
+                        <li><a href="#">지원 내용</a></li>
+                        <li><a href="#">지원 신청</a></li>
+                        <li><a href="#">지원 절차</a></li>
+                        <li><a href="#">의무와 제재</a></li>
+                        <li><a href="#">수급자격알림 및 이의제기</a></li>
+                        <li><a href="#">취업지원 및 생계안정 지원</a></li>
+                        <li><a href="#">취업지원서비스 제공</a></li>
+                        <li><a href="#">생계안정을 위한 소득지원</a></li>
+                        <li><a href="#">사후관리 지원</a></li>
+                        <li><a href="#">취업지원 프로그램</a></li>
+                        <li><a href="#">운영기관 찾기</a></li>
+                        <li><a href="#">자주하는 질문(FAQ)</a></li>
+                    </ul>
+                </li>
+                <li class="topgnbli">
+                    <a href=".category">자가진단</a>
+                    <ul class="submenu">
+                        <li><a href="#">수급자격 모의산정</a></li>
+                        <li><a href="#">취업유형진단</a></li>
+                        <li><a href="#">진단유형별 취업지원</a></li>
+                    </ul>
+                </li>
+                <li class="topgnbli">
+                    <a href="#healthy">취업지원관리</a>
+                    <ul class="submenu">
+                        <li><a href="#">신청현황 관리</a></li>
+                        <li><a href="#">취업지원참여 신청</a></li>
+                        <li><a href="#">Ⅰ유형 이행 관리</a></li>
+                        <li><a href="#">취업활동계획 이행 등록 및 구직촉진수당 신청</a></li>
+                        <li><a href="#">Ⅱ유형 이행관리</a></li>
+                        <li><a href="#">참여수당 지급 신청</a></li>
+                        <li><a href="#">훈련참여지원수당 신청</a></li>
+                        <li><a href="#">참여장려수당 신청</a></li>
+                        <li><a href="#">참여현황관리</a></li>
+                        <li><a href="#">취업지원 유예 신청</a></li>
+                        <li><a href="#">취업지원 재참여 신청</a></li>
+                        <li><a href="#">심사 청구</a></li>
+                        <li><a href="#">취업성공수당 관리</a></li>
+                        <li><a href="#">취업성공수당 지급 신청</a></li>
+                    </ul>
+                </li>
+                <li class="topgnbli">
+                    <a href=".story">국취이야기</a>
+                    <ul class="submenu">
+                        <li><a href="#">국민취업지원제도 이야기</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">고용센터 공지 및 공고</a></li>
+                        <li><a href="#">서식 자료실</a></li>
+                        <li><a href="#">홍보 및 보도자료</a></li>
+                    </ul>
+                </li>
+                <li class="topgnbli">
+                    <a href="#myskill">일경험</a>
+                    <ul class="submenu">
+                        <li><a href="#">일경험프로그램이란</a></li>
+                        <li><a href="#">일경험참여기업</a></li>
+                        <li><a href="#">참여기업신청안내</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--탑 메뉴-->
+    <main>
+        <!--메인배너-->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#"><img src="./img/제목 없음.png" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./img/제목 없음1.png" alt=""></a></div>
+            </div>
+            <!-- ADD PAGINATION -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script type="text/javascript">
+            var swiper = new Swiper(".mySwiper", {
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        </script>
+        <!--메인배너-->
+        <div class="category">
+            <h2 class="mainh2"> 국민취업지원제도 사업소개 </h2>
+            <h3 class="mainh3">2021년 1월 1일 「구직자 취업촉진 및 생활안정지원에 관한 법률」에 근거하여 한국형 실업부조 ‘국민취업지원제도’가 시행되었습니다.</h3>
+        </div>
+        <div class="section">
+            <ul class="sectionul">
+                <li><a href="#"><img src="./img/search_FILL0_wght400_GRAD0_opsz48.png"><span>국민취업<br>지원제도</span></a></li>
+                <li><a href="#"><img src="./img/group_add_FILL0_wght400_GRAD0_opsz48.png"><span>지원 대상</span></a></li>
+                <li><a href="#"><img src="./img/find_in_page_FILL0_wght400_GRAD0_opsz48.png"><span>지원 내용</span></a></li>
+                <li><a href="#"><img src="./img/edit_note_FILL0_wght400_GRAD0_opsz48.png"><span>지원 신청</span></a></li>
+                <li><a href="#"><img src="./img/search_off_FILL0_wght400_GRAD0_opsz48.png"><span>지원 절차</span></a></li>
+                <li><a href="#"><img src="./img/request_quote_FILL0_wght400_GRAD0_opsz48.png"><span>의무와 제재</span></a></li>
+                <li><a href="#"><img src="./img/description_FILL0_wght400_GRAD0_opsz48.png"><span>취업지원 및<br> 생계안정지원</span></a></li>
+                <li><a href="#"><img src="./img/folder_open_FILL0_wght400_GRAD0_opsz48.png"><span>취업지원<br> 프로그램</span></a></li>
+                <li><a href="#"><img src="./img/newspaper_FILL0_wght400_GRAD0_opsz48.png"><span>국민취업<br>지원제도</span></a></li>
+            </ul>
+        </div>
+        <div class="info">
+            <div class="leftinfo">
+                <div class="infohead">
+                    <h2 class="infoh2">자가진단</h2>
+                    <h3 class="infoh3">간단하게 항목에 입력으로 수급대상자 여부를 확인</h3>
+                </div>
+                <div class="leftinfo-box">
+                    <ul class="box-head">
+                        <li class="box-inner"><button type="button" id="headbutton">수급자격 모의신청</button></li>
+                        <li class="box-inner"><a href="#">취업유형진단 소개 및 실시</a></li>
+                        <li class="box-inner"><a href="#">유형별 취업지원</a></li>
+                    </ul>
+                    <ul class="leftul">
+                        <li><img src="./img/person_FILL0_wght400_GRAD0_opsz48.png"><input type="radio" name="age" id="age"><label for="age">15세미만</label></li>
+                        <li><img src="./img/person_FILL0_wght400_GRAD0_opsz48.png"><input type="radio" name="age" id="age"><label for="age">15 ~ 17세</label></li>
+                        <li><img src="./img/person_FILL0_wght400_GRAD0_opsz48.png"><input type="radio" name="age" id="age"><label for="age">18세 ~ 34세</label></li>
+                        <li><img src="./img/person_FILL0_wght400_GRAD0_opsz48.png"><input type="radio" name="age" id="age"><label for="age">35 ~ 64세</label></li>
+                        <li><img src="./img/person_FILL0_wght400_GRAD0_opsz48.png"><input type="radio" name="age" id="age"><label for="age">65 ~ 69세</label></li>
+                        <li><img src="./img/person_FILL0_wght400_GRAD0_opsz48.png"><input type="radio" name="age" id="age"><label for="age">70세 이상</label></li>
+                    </ul>
+                    <a href="#">모의산정 테스트<img src="" alt=""></a>
+                </div>
+            </div>
+            <div class="rightinfo">
+                <div class="infohead">
+                    <h2 class="infoh2">운영기관 안내</h2>
+                    <h3 class="infoh3">운영기관을 각 지역별로 구분하여 검색가능</h3>
+                </div>
+                <div class="items">
+                    <ul>
+                        <li><a href="#">서울</a></li>
+                        <li><a href="#">부산</a></li>
+                        <li><a href="#">대구</a></li>
+                        <li><a href="#">인천</a></li>
+                        <li><a href="#">광주</a></li>
+                        <li><a href="#">대전</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">울산</a></li>
+                        <li><a href="#">세종</a></li>
+                        <li><a href="#">경기</a></li>
+                        <li><a href="#">강원</a></li>
+                        <li><a href="#">충북</a></li>
+                        <li><a href="#">충남</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">전북</a></li>
+                        <li><a href="#">전남</a></li>
+                        <li><a href="#">경북</a></li>
+                        <li><a href="#">경남</a></li>
+                        <li><a href="#">제주</a></li>
+                        <li><a href="#">+</a></li>
+                    </ul>
+                </div>
+                <div class="bot-box">
+                    <h2 class="infoh2">고용부 고객센터</h2>
+                    <h3 class="infoh3">자세한 사항은  <br>대표전화 문의</h3>
+                    <img src="./img/support_agent_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                    <p>1350<span>(유료)</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="notice">
+            <div class="notice-head">
+                <h2>알림마당</h2>
+                <ul>
+                    <li><a href="#">전체보기</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">홍보 및 보도자료</a></li>
+                    <li><a href="#">고용센터 공지/공고</a></li>
+                    <li><a href="#">서식자료실</a></li>
+                </ul>
+            </div>
+            <div class="items-box">
+                <ul>
+                    <li><a href="#"><p>공지사항</p><h2>[이벤트]국민취업지원제도 이모티콘 배포</h2><h3>국민취업지원제도 이모티콘 배포 기념 사전 투표 Event♣올해는 꼭 취업성공, 취올라잇~!보면 절로 힘이 생기는 이룸이와 밀착이의 응원을 5/31 오후 2시, 무료 이모티콘으로 만나보세요(국민취업지원제도 상담챗봇 신규 추가 시 선착순 25,000명)이모티콘 배포 전 준비한 깜짝 이벤트!취업준비로 지친 나에게 가장 힘이 되는 이모티콘은 어떤 것인가요?지금 바로 취업준비생을 위한 응원 댓글을 달고아래 링크에서 투표해주세요!★투표: https://naver.me/5NY5jFqt★기간 : 5/16(월)~5/30(월) &nbsp;&nbsp;&nbsp; * 카카오 상담챗봇 내 당첨공지 6/8(수)★경품 : 치킨(10명), 배스킨라빈스 파인트(40명)</h3></a></li>
+                    <li><a href="#"><p>공지사항</p><h2>	[간편인증] KT / KB국민은행 인증서 작업 관련 안내</h2><h3>안녕하세요국민취업지원제도 홈페이지 담당자 입니다.통신사패스(KT DBMS 대개체 작업 재 진행) 작업 에 따른통신사패스 인증서에 대한 전자서명인증서비스 중단 사전안내를 다음과 같이 공지드립니다.○ 작업 내용 : 통신사패스( KT DBMS 대개체 작업) 작업으로 인한 통신사패스 간편인증 인증서 사용 중단○ 작업 일시 : 2022.05.10(화) 오전 00:00 ~ 04:00○ 영향도 : 작업 시간동안 KT고객의 통신사패스 인증서 인증 이용 중단 (SKT " LGU+ 고객은 정상 서비스 제공)※ 타사 인증서는 정상적으로 사용 가능KB국민은행(KB국민은행 오픈API 시스템 정기작업) 작업 에 따른KB국민은행 인증서에 대한 전자서명인증서비스 중단 사전안내를 다음과 같이 공지드립니다.○ 작업 내용 : KB국민은행(오픈API 시스템 정기작업) 작업으로 인한 KB국민은행 간편인증 인증서 사용 중단○ 작업 일시 : 2022.05.14(토) 오후 19:00 ~ 05.15(일) 03:00○ 영향도 : 작업 시간동안 KB국민은행 인증서 간헐적 사용 중단※ 타사 인증서는 정상적으로 사용 가능감사합니다.</h3></a></li>
+                    <li><a href="#"><p>공지사항</p><h2>국민취업지원제도 홍보 콘텐츠 공모전</h2><h3>내가 만든 콘텐츠로 전국민 취올라잇! 국민취업지원제도 홍보 콘텐츠 공모전(~6/10)국민취업지원제도를 5장 이내의 콘텐츠로 쉽고 재미있게 소개해주세요!나와 지인의 경험담이 추가된 후기도 가능~♡수상자에게는 최신 노트북, 에어팟프로 등 푸짐한 경품까지?!★전국민 누구나 참여 가능하니 자세한 내용 확인하고 콘텐츠 제작하러 고고~☞ 공모전 지원하러 가기(구글 로그인):https://forms.gle/pKfNZvifGzgKs8e48※ 공모전 운영 사무국newideacontest@gmail.com#국민취업지원제도 #공모전 #이벤트 #콘텐츠 공모전</h3></a></li>
+                    <li><a href="#"><p>공지사항</p><h2>	[국민취업지원제도 X 스브스뉴스] ☞ 응원댓글 이벤트 진행합니다~!</h2><h3>스브스뉴스에 국민취업지원제도 참여자 등판!정말 빡센 요즘 취업시장, 취업을 꿈꾸는 수많은 취업준비생들이 국민취업지원제도의 지원을 발판 삼아 취업에만 올인할 수 있도록 응원해주세요~가장 힘이 되는 응원을 댓글로 남겨주신 25분에게 푸짐한 경품을 드립니다~ ♡☆ 참여방법 ☆1. 스브스뉴스 채널에 업로드된 국민취업지원제도 영상을 시청한다.2. 고용노동부 페이스북 게시물에 영상 캡처 이미지와 함께 취업준비생 청년을 향한 응원 댓글을 남긴다. &nbsp;&nbsp;ex) 대한민국 취업준비생 청년들 모두 원하는 곳으로 취뽀◈ 선물 ◈ &nbsp;- 전동 마사지건(5명)&nbsp;- 스타벅스 커피(20명)&nbsp;√ 참여기간 : ~5/11(수)까지√ 당첨자 발표 : 5/20(금)&nbsp;(개별통보)</h3></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="service">
+            <h2 class="serviceh2">서비스 신청</h2>
+            <div class="service-inner">
+                <ul>
+                    <li><a href="#"><img src="./img/참여신청.png"><span>취업지원 참여 신청</span></a></li>
+                    <li><a href="#"><img src="./img/신청현황.png"><span>신청 현황</span></a></li>
+                    <li><a href="#"><img src="./img/이행관리.png"><span>취업활동 계획<br>이행관리</span></a></li>
+                    <li><a href="#"><img src="./img/현황관리.png"><span>참여 현황관리</span></a></li>
+                    <li><a href="#"><img src="./img/취업성공.png"><span>취업성공수당 관리</span></a></li>
+                    <li><a href="#"><img src="./img/일경험.png"><span>일경험프로그램<br>참여기업조회</span></a></li>
+                    <li><a href="#"><img src="./img/취업지원참여.png"><span>일경험프로그램<br>참여신청</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="last-items">
+            <div class="story">
+                <h2>국민취업제도 이야기</h2>
+                <ul>
+                    <li><a href="#"><img src="img/directStaticImgView.jpg"><span>국취 상담사가 전하는 취업이야기 취~터뷰 3탄(저소득층 편)</span></a></li>
+                    <li><a href="#"><img src="img/directStaticImgView (1).jpg"><span>국취 상담사가 전하는 취업이야기 취~터뷰 2탄(중장년편)</span></a></li>
+                    <li><a href="#"><img src="img/directStaticImgView (2).jpg"><span>국취 상담사가 전하는 취업이야기 취~터뷰(20대 청년편)</span></a></li>
+                </ul>
+            </div>
+            <div class="faq">
+                <h2>FAQ</h2>
+                <ul class="faqul">
+                    <li><a href="#"><h3>[지원대상]</h3>새로 회원가입을 했는데 기존에 신청한 이력은 어떻게 확인하나요?</a></li>
+                    <li><a href="#"><h3>[지원대상]</h3>새로 회원가입을 했는데 기존에 신청한 이력은 어떻게 확인하나요?</a></li>
+                    <li><a href="#"><h3>[지원대상]</h3>새로 회원가입을 했는데 기존에 신청한 이력은 어떻게 확인하나요?</a></li>
+                    <li><a href="#"><h3>[지원대상]</h3>새로 회원가입을 했는데 기존에 신청한 이력은 어떻게 확인하나요?</a></li>
+                </ul>
+                <ul class="bottom">
+                    <li class="bottomli"><a href="#">지원 대상</a></li>
+                    <li class="bottomli"><a href="#">지원 내용</a></li>
+                    <li class="bottomli"><a href="#">지원 신청</a></li>
+                    <li class="bottomli"><a href="#">지원 절차</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="footertop">
+            <ul class="left-footer">
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이메일주소 무단수집거부</a></li>
+                <li><a href="#">저작권정책 및 제휴문의</a></li>
+            </ul>
+            <div class="right-footer">
+                <select class="familysite" title="유관기관사이트">
+                    <option>유관기관사이트</option>
+                    <option value="https://www.work.go.kr">워크넷</option>
+                    <option value="https://www.hrd.go.kr">HRD넷</option>
+                    <option value="https://www.naver.com">네이버</option>
+                    <option value="https://www.daum.net">다음</option>
+                </select>
+                <a href="#">이동</a>
+            </div>
+        </div>
+        <div class="footer-inner">
+            <div class="footer-logo">
+                <img src="./img/footer_logo_moel.png">
+                <img src="./img/footer_logo_keis.png">
+            </div>
+            <div class="footer-text">
+                <p>27740 충청북도 음성군 맹동면 태정로 6 한국고용정보원</p>
+                <p>국민취업지원 제도(자격조건,필요서류, 심사 등) 문의 1350 (고용부 콜센터, 유료)</p>
+                <p>국민취업지원 시스템 이용문의 kuamaster@keis.or.kr 1577-7114 (6번: 국민취업지원제도)</p>
+                <p>Copyright © 2018 고용노동부 한국고용정보원 all rights reserved.</p>
+            </div>
+            <div class="right-logo">
+                <img src="img/WA_Mark.png" alt="">
+            </div>
+        </div>
+    </footer>
+        
+                
+</body>
+</html>
