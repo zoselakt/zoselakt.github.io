@@ -4,11 +4,339 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> table-grid </title>
+    <link rel="stylesheet" href="./css/initial.min.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
 </head>
 <body>
-    <a href="./클론코딩2탄/index.html">상품판매사이트 클론코딩</a>
-    <a href="./클론코딩3탄/index.html">학습사이트 클론코딩</a>
-    <a href="./클론코딩4탄/index.html">공공기관사이트 클론코딩</a>
+    <div class="back-to-top">
+        <a href="#intro">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="18px" height="18px"><path d="M0 0h24v24H0z" fill="none"/><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+        </a>
+    </div>
+    <!--mobile-->
+    <input type="checkbox" id="gnbcheck" name="gnbcheck">
+    <header id="header">
+        <label for="gnbcheck" id="gnbbtn"><span></span><span></span><span></span></label>
+        <h1 id="top-logo">
+            <a href="#">logo</a>
+        </h1>
+        <nav id="gnb">
+            <label for="gnbcheck" id="mobile-close-btn"></label>
+            <ul>
+                <li><a href="#intro">HOME</a></li>
+                <li><a href="#myprofile">MyProfile</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#myskill">MySkill</a></li>
+                <li><a href="#ourclients">OurClients</a></li>
+                <li><a href="#mytool">MyTools</a></li>
+                <li><a href="#project">Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <article>
+                <h2>About My PortFolio</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga fugit quibusdam, incidunt rem ipsam illum ipsum ut laborum. Ratione soluta, maxime perferendis vitae veniam amet sapiente cum maiores odit provident?</p>
+                <a href="#myprofile" class="button">get started</a>
+            </article>
+        </section>
+        <section id="myprofile">
+            <div class="row">
+                <h2>My Profile</h2>
+                <div class="column">
+                    <div class="inner">
+                        <img src="./img/profile/[3x4]김광동-1.jpg" alt="my profile" class="shadow">
+                        <h3>Gwangdong Kim</h3>
+                        <div class="job">web engineer / Backend developer</div><br>
+                        <a href="./클론코딩2탄/index.html">1. 상품판매사이트 클론코딩</a>
+                        <a href="./클론코딩3탄/index.html">2. 학습사이트 클론코딩</a>
+                        <a href="./클론코딩4탄/index.html">3. 공공기관사이트 클론코딩</a>
+                    </div>
+                </div>                
+            </div>
+        </section>
+        <section id="portfolio">
+            <div class="row">
+                <h2>Portfolio</h2>
+                <div class="column">
+                    <div class="inner">
+                        <a href="#"><img src="./img/portfolio/img01.jpg" alt="img01"></a>
+                        <h3>Portfolio</h3>
+                        <p>
+                            <strong>Participation &nbsp; : </strong> &nbsp; 50%<br>
+                            <strong>Description &nbsp; : </strong> &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="inner">
+                        <a href="#"><img src="./img/portfolio/img02.jpg" alt="img01"></a>
+                        <h3>Portfolio</h3>
+                        <p>
+                            <strong>Participation &nbsp; : </strong> &nbsp; 50%<br>
+                            <strong>Description &nbsp; : </strong> &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="inner">
+                        <a href="#"><img src="./img/portfolio/img03.jpg" alt="img01"></a>
+                        <h3>Portfolio</h3>
+                        <p>
+                            <strong>Participation &nbsp; : </strong> &nbsp; 50%<br>
+                            <strong>Description &nbsp; : </strong> &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="inner">
+                        <a href="#"><img src="./img/portfolio/img04.jpg" alt="img01"></a>
+                        <h3>Portfolio</h3>
+                        <p>
+                            <strong>Participation &nbsp; : </strong> &nbsp; 50%<br>
+                            <strong>Description &nbsp; : </strong> &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="inner">
+                        <a href="#"><img src="./img/portfolio/img05.jpg" alt="img01"></a>
+                        <h3>Portfolio</h3>
+                        <p>
+                            <strong>Participation &nbsp; : </strong> &nbsp; 50%<br>
+                            <strong>Description &nbsp; : </strong> &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="inner">
+                        <a href="#"><img src="./img/portfolio/img06.jpg" alt="img01"></a>
+                        <h3>Portfolio</h3>
+                        <p>
+                            <strong>Participation &nbsp; : </strong> &nbsp; 50%<br>
+                            <strong>Description &nbsp; : </strong> &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="inner">
+                        <a href="#"><img src="./img/portfolio/img07.jpg" alt="img01"></a>
+                        <h3>Portfolio</h3>
+                        <p>
+                            <strong>Participation &nbsp; : </strong> &nbsp; 50%<br>
+                            <strong>Description &nbsp; : </strong> &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="inner">
+                        <a href="#"><img src="./img/portfolio/img08.jpg" alt="img01"></a>
+                        <h3>Portfolio</h3>
+                        <p>
+                            <strong>Participation &nbsp; : </strong> &nbsp; 50%<br>
+                            <strong>Description &nbsp; : </strong> &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="myskill">
+            <div class="row">
+                <h2>My Skill</h2>
+                <div class="column">
+                    <div class="inner progressbar">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dignissimos odio laborum hic quaerat doloribus error quo non eius accusamus beatae, soluta adipisci doloremque reprehenderit. Nihil quisquam nisi praesentium nostrum.</p>
+                        <div class="items-wrap">
+                            <div class="items">
+                                <div class="title">HTML5</div>
+                                <div class="percent">70%</div>
+                            </div>
+                        </div>
+                        <div class="items-wrap">
+                            <div class="items">
+                                <div class="title">CSS3</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="items-wrap">
+                            <div class="items">
+                                <div class="title">JavaScript</div>
+                                <div class="percent">30%</div>
+                            </div>
+                        </div>
+                        <div class="items-wrap">
+                            <div class="items">
+                                <div class="title">JQuery</div>
+                                <div class="percent">15%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </section>
+        <section id="ourclients">
+            <div class="row">
+                <h2>OurClients</h2>
+                <div class="column">
+                    <div class="inner">
+                        <img src="./img/clients/client-1.png" alt="client-1">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="inner">
+                        <img src="./img/clients/client-2.png" alt="client-2">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="inner">
+                        <img src="./img/clients/client-3.png" alt="client-3">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="inner">
+                        <img src="./img/clients/client-4.png" alt="client-4">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="inner">
+                        <img src="./img/clients/client-5.png" alt="client-5">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="inner">
+                        <img src="./img/clients/client-6.png" alt="client-6">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="inner">
+                        <img src="./img/clients/client-7.png" alt="client-7">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="inner">
+                        <img src="./img/clients/client-8.png" alt="client-8">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="mytool">
+            <div class="row">
+                <h2>My Tools</h2>
+                <div class="column">
+                    <div class="inner">
+                        <img src="./img/mytool/img01.png" alt="mytool1">
+                        <h3>HTML5</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero quam harum deleniti repudiandae nisi error rerum cupiditate corrupti dolorem? Error iste sint cumque alias perferendis omnis ipsum odit, reprehenderit ducimus.</p>
+                    </div>
+                </div>                
+                <div class="column">
+                    <div class="inner">
+                        <img src="./img/mytool/img02.png" alt="mytool2">
+                        <h3>CSS3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic qui, non velit nesciunt fuga saepe optio! Aliquam error eos facilis ex voluptates. Quae maiores, laboriosam culpa magnam vel saepe fugit.</p>
+                    </div>
+                </div>  
+                <div class="column">
+                    <div class="inner">
+                        <img src="./img/mytool/img03.png" alt="mytool3">
+                        <h3>JavaScript</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, numquam quam. Autem doloribus necessitatibus rem sapiente commodi nobis ipsa aliquam, illum voluptatum magnam non veritatis laudantium voluptas voluptates iste accusamus!</p>
+                    </div>
+                </div>  
+                <div class="column">
+                    <div class="inner">
+                        <img src="./img/mytool/img04.png" alt="mytool4">
+                        <h3>HTML5</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro fugiat enim magni maiores, aspernatur consequatur? Dolorem officia eos inventore, quibusdam, consequuntur aliquid nobis corrupti autem placeat suscipit eligendi dignissimos reiciendis?</p>
+                    </div>
+                </div>  
+            </div>
+        </section>
+        <section id="project">
+            <div class="row">
+                <h2>Project</h2>
+                <div class="column">
+                    <div class="inner">
+                        <img src="./img/about/about-mission.jpg" alt="project1">
+                        <h3>HTML5</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro fugiat enim magni maiores, aspernatur consequatur? Dolorem officia eos inventore, quibusdam, consequuntur aliquid nobis corrupti autem placeat suscipit eligendi dignissimos reiciendis?</p>
+                    </div>
+                </div>  
+                <div class="column">
+                    <div class="inner">
+                        <img src="./img/about/about-plan.jpg" alt="project2">
+                        <h3>CSS3</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro fugiat enim magni maiores, aspernatur consequatur? Dolorem officia eos inventore, quibusdam, consequuntur aliquid nobis corrupti autem placeat suscipit eligendi dignissimos reiciendis?</p>
+                    </div>
+                </div>  
+                <div class="column">
+                    <div class="inner">
+                        <img src="./img/about/about-vision.jpg" alt="project3">
+                        <h3>JavaScript</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro fugiat enim magni maiores, aspernatur consequatur? Dolorem officia eos inventore, quibusdam, consequuntur aliquid nobis corrupti autem placeat suscipit eligendi dignissimos reiciendis?</p>
+                    </div>
+                </div>  
+                <div class="column">
+                    <div class="inner">
+                        <img src="./img/about/about-mission.jpg" alt="project4">
+                        <h3>JavaScript</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro fugiat enim magni maiores, aspernatur consequatur? Dolorem officia eos inventore, quibusdam, consequuntur aliquid nobis corrupti autem placeat suscipit eligendi dignissimos reiciendis?</p>
+                    </div>
+                </div>  
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="column footer-logo">
+                        <h3>Logo</h3>
+                    </div>
+                    <div class="column">
+                        <h4>siteMap</h4>
+                        <ul>
+                            <li><a href="#intro">Home</a></li>
+                            <li><a href="#myprofile">My Profile</a></li>
+                            <li><a href="#portfolio">PortFolio</a></li>
+                            <li><a href="#myskill">MySkill</a></li>
+                            <li><a href="#ourclients">OurClients</a></li>
+                            <li><a href="#mytool">My Tools</a></li>
+                            <li><a href="#project">Project</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>Contact Us</h4>
+                        <p>
+                            A108 Adam street <br>
+                            New York, NY 535022 <br>
+                            United states <br>
+                            <strong>Phone : </strong> <a href="tel:+82-10-1111-2222">+82-010-1234-5678</a>
+                            <strong>Email : </strong><a href="mailto:kd66@naver.com">MyMail</a>
+                        </p>
+                    </div>
+                    <div class="column news">
+                        <h4>News</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consectetur expedita, dolorum laudantium aspernatur atque incidunt nobis porro, omnis nam totam rem, excepturi modi quidem sint commodi perspiciatis sapiente. Laborum.</p>
+                        <form><input type="text" name="search"><input type="submit" value="search"></form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                &copy;copyright<strong>MyPage</strong> .All Right Reserved
+            </div>
+            <div class="credits">
+                Disign By <a href="mailto:kd66@naver.com">MySelf</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
