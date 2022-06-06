@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 클론5탄 </title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+</head>
+<body>
+    <!--탑버튼-->
+    <div class="back-to-top">
+        <a href="#intro"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="18px" height="18px"><path d="M0 0h24v24H0z" fill="none"/><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg></a>
+    </div>
+    <!--탑버튼-->
+    <!--탑 메뉴-->
+    <header id="header">
+        <nav class="gnb">
+            <div class="homepage">
+                <div class="left-home">
+                    <ul class="text">
+                        <li><a href="#" class="first">영진전문대학교</a></li>
+                        <li><a href="#" class="second">입학홈페이지</a></li>
+                    </ul>
+                    <ul class="img">
+                        <li><a href="#"><img src="./img/face.png"></a></li>
+                        <li><a href="#"><img src="./img/인스타.png"></a></li>
+                        <li><a href="#"><img src="img/유튜브.png"></a></li>
+                        <li><a href="#"><img src="img/블로그.png"></a></li>
+                        <li><a href="#"><img src="img/카페.png"></a></li>
+                        <li><a href="#"><img src="img/머지.png"></a></li>
+                    </ul>
+                </div>
+                <ul class="right-home">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">KOR</a></li>
+                    <li><a href="#">+</a></li>
+                    <li><a href="#">-</a></li>
+                </ul>
+            </div>
+            <div class="gnb-wrap">
+                <h1 id="top-logo">
+                    <a href="#"><img src="./img/h-logo.svg" alt=""></a>
+                </h1>
+                <div class="gnb-inner">
+                    <ul class="topgnb">
+                        <li class="topgnbli">
+                            <a href="#intro">대학안내</a>
+                            <ul class="submenu">
+                                <li class="sub-inner"><a href="#">건학이념</a></li>
+                                <li class="sub-inner"><a href="#">총장인사말</a></li>
+                                <li class="sub-inner"><a href="#">대학연혁</a></li>
+                                <li class="sub-inner"><a href="#">대학비전</a></li>
+                                <li class="sub-inner"><a href="#">영진상징</a></li>
+                                <li class="sub-inner"><a href="#">학교법인</a></li>
+                                <li class="sub-inner"><a href="#">대학기관</a></li>
+                                <li class="sub-inner"><a href="#">찾아오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li class="topgnbli">
+                            <a href=".category">계열 학과</a>
+                            <ul class="submenu">
+                                <li class="sub-inner">
+                                    <a href="#">23학년도 계열 학과</a>
+                                </li>
+                                <li class="sub-inner">
+                                    <a href="#">컴퓨터정보계열</a>
+                                    <ul class="sub-innerul">
+                                        <li class="sub-innerli">AI 빅데이터응용소프트웨어과</li>
+                                        <li class="sub-innerli">정보보안 게임콘텐츠과</li>
+                                        <li class="sub-innerli">AI클라우드 프로그래밍과</li>
+                                        <li class="sub-innerli">일본IT과</li>
+                                    </ul>
+                                </li>
+                                <li class="sub-inner">
+                                    <a href="#">AI융합기계계열</a>
+                                    <ul class="sub-innerul">
+                                        <li class="sub-innerli">스마트기계설계과</li>
+                                        <li class="sub-innerli">로봇자동화과</li>
+                                        <li class="sub-innerli">스마트CAD/CAM과</li>
+                                        <li class="sub-innerli">에너지화학플랜트과</li>
+                                        <li class="sub-innerli">미래자동차설계과</li>
+                                    </ul>
+                                </li>
+                                <li class="sub-inner">
+                                    <a href="#">반도체전자계열</a>
+                                    <ul class="sub-innerul">
+                                        <li class="sub-innerli">반도체디스플레이과</li>
+                                        <li class="sub-innerli">반도체시스템과</li>
+                                        <li class="sub-innerli">반도체융합전자과</li>
+                                        <li class="sub-innerli">친환경배터리화공소재과</li>
+                                        <li class="sub-innerli">미래자동차전자과</li>
+                                    </ul>
+                                </li>
+                                <li class="sub-inner">
+                                    <a href="#">신재생에너지전기계열</a>
+                                    <ul class="sub-innerul">
+                                        <li class="sub-innerli">에너지전기과</li>
+                                        <li class="sub-innerli">전기철도과</li>
+                                        <li class="sub-innerli">전기자동차과</li>
+                                        <li class="sub-innerli">전기자동학과</li>
+                                    </ul>
+                                </li>
+                                <li class="sub-inner">
+                                    <a href="#">국방군사계열</a>
+                                    <ul class="sub-innerul">
+                                        <li class="sub-innerli">항공정비부사관과</li>
+                                        <li class="sub-innerli">전투부사관과</li>
+                                        <li class="sub-innerli">응급주도의무부사관과</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="submenu">
+                                <li class="sub-inner">
+                                    <a href="#">건축과</a>
+                                </li>
+                                <li class="sub-inner">
+                                    <a href="#">인테리어디자인과</a>
+                                </li>
+                                <li class="sub-inner">
+                                    <a href="#">콘텐츠디자인과</a>
+                                </li>
+                                <li class="sub-inner">
+                                    <a href="#">무인항공드론과</a>
+                                </li>
+                                <li class="sub-inner">
+                                    <a href="#">경영회계서비스계열</a>
+                                    <ul class="sub-innerul">
+                                        <li class="sub-innerli">전산세무회계과</li>
+                                        <li class="sub-innerli">서비스마케팅과</li>
+                                        <li class="sub-innerli">스포츠경영과</li>
+                                        <li class="sub-innerli">글로벌비즈니스과</li>
+                                    </ul>
+                                </li>
+                                <li class="sub-inner">
+                                    <a href="#">호텔항공관광과</a>
+                                </li>
+                                <li class="sub-inner">
+                                    <a href="#">사회복지과</a>
+                                </li>
+                            </ul>
+                            <ul class="submenu">
+                                <li class="sub-inner">
+                                    <a href="#">유아교육과</a>
+                                </li>
+                                <li class="sub-inner">
+                                    <a href="#">간호학과</a>
+                                </li>
+                                <li class="sub-inner">
+                                    <a href="#">보건의료행정과</a>
+                                </li>
+                                <li class="sub-inner">
+                                    <a href="#">동물보건과</a>
+                                </li>
+                                <li class="sub-inner">
+                                    <a href="#">조리제과제빵과</a>
+                                </li>
+                                <li class="sub-inner">
+                                    <a href="#">만화애니메이션괴</a>
+                                </li>
+                            </ul>
+                            <ul class="submenu">
+                                <li class="sub-inner">
+                                    <a href="#">뷰티융합과</a>
+                                </li>
+                                <li class="sub-inner">
+                                    <a href="#">스포츠재활과</a>
+                                </li>
+                                <li class="sub-inner">
+                                    <a href="#">방송영상미디어과</a>
+                                </li>
+                                <li class="sub-inner">
+                                    <a href="#">22학년도 계열 학괴</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="topgnbli">
+                            <a href="#intro">입학안내</a>
+                            <ul class="submenu">
+                                <li class="sub-inner"><a href="#">입학홈페이지</a></li>
+                                <li class="sub-inner"><a href="#">입학상담안내</a></li>
+                                <li class="sub-inner"><a href="#">수시</a></li>
+                                <li class="sub-inner"><a href="#">정시</a></li>
+                                <li class="sub-inner"><a href="#">자율</a></li>
+                                <li class="sub-inner"><a href="#">직장인 입학</a></li>
+                                <li class="sub-inner"><a href="#">학사학위 전공심화</a></li>
+                                <li class="sub-inner"><a href="#">편입학</a></li>
+                                <li class="sub-inner"><a href="#">전문기술 석사과정</a></li>
+                            </ul>
+                        </li>
+                        <li class="topgnbli">
+                            <a href="#intro">학사안내</a>
+                            <ul class="submenu">
+                                <li class="sub-inner"><a href="#">학사일정</a></li>
+                                <li class="sub-inner"><a href="#">학칙</a></li>
+                                <li class="sub-inner"><a href="#">등록안내</a></li>
+                                <li class="sub-inner"><a href="#">수강신청안내</a></li>
+                                <li class="sub-inner"><a href="#">성적관리안내</a></li>
+                                <li class="sub-inner"><a href="#">휴복학/제적안내</a></li>
+                                <li class="sub-inner"><a href="#">재입학안내</a></li>
+                                <li class="sub-inner"><a href="#">교양교육</a></li>
+                                <li class="sub-inner"><a href="#">비교과 프로그램</a></li>
+                                <li class="sub-inner"><a href="#">증명서 발급안내</a></li>
+                            </ul>
+                        </li>
+                        <li class="topgnbli">
+                            <a href="#intro">캠퍼스라이프</a>
+                            <ul class="submenu">
+                                <li class="sub-inner"><a href="#">공지사항</a></li>
+                                <li class="sub-inner"><a href="#">장학/학자금융자</a></li>
+                                <li class="sub-inner"><a href="#">생활관(기숙사)</a></li>
+                                <li class="sub-inner"><a href="#">학생생활정보</a></li>
+                                <li class="sub-inner"><a href="#">학생편의시설</a></li>
+                                <li class="sub-inner"><a href="#">스쿨버스노선</a></li>
+                                <li class="sub-inner"><a href="#">대학생활게시판</a></li>
+                                <li class="sub-inner"><a href="#">근로장학생모집</a></li>
+                            </ul>
+                        </li>
+                        <li class="topgnbli">
+                            <a href="#intro">Pride of YJ</a>
+                            <ul class="submenu">
+                                <li class="sub-inner"><a href="#">한 눈에 보는 YJU</a></li>
+                                <li class="sub-inner"><a href="#">주문식교육</a></li>
+                                <li class="sub-inner"><a href="#">취업률1위</a></li>
+                                <li class="sub-inner"><a href="#">해외취업1위</a></li>
+                                <li class="sub-inner"><a href="#">최다장학금</a></li>
+                                <li class="sub-inner"><a href="#">일반재정지원대학</a></li>
+                                <li class="sub-inner"><a href="#">마이스터대학</a></li>
+                                <li class="sub-inner"><a href="#">혁신공유대학</a></li>
+                                <li class="sub-inner"><a href="#">존경받는 대학</a></li>
+                                <li class="sub-inner"><a href="#">대기업취업&해외취업</a></li>
+                                <li class="sub-inner"><a href="#">기관평가인증</a></li>
+                                <li class="sub-inner"><a href="#">교육국제화역량인증</a></li>
+                                <li class="sub-inner"><a href="#">혁신지원사업</a></li>
+                                <li class="sub-inner"><a href="#">LINC+사업선정</a></li>
+                                <li class="sub-inner"><a href="#">해외무시험편입</a></li>
+                                <li class="sub-inner"><a href="#">국제교류현황</a></li>
+                                <li class="sub-inner"><a href="#">글로벌 프로그램</a></li>
+                                <li class="sub-inner"><a href="#">산학협력</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="hamburger">
+                        <label for="hamburg" class="hamham"><span></span><span></span><span></span></label>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--탑 메뉴-->
+    <main>
+        <div class="main-inner">
+            <!--메인배너-->
+            <div id="mainbanner">
+                <h1 class="mainbannerh1">Global leader,<br> yeungjin university</h1>
+                <div class="mainimg">
+                    <div class="swiper firstSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><a href="#"><img src="./img/메인/6N1TFAsqdVnvdUCZ.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="./img/메인/hVCsJGmfDhplXm13.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="./img/메인/HZsFU0UeAPaTZAFF.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="./img/메인/PhwRbgZplMjbvEwh.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="./img/메인/r0Isc2kCq52Hascf.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="./img/메인/snYA6PJR4gOQMLl1.jpg" alt=""></a></div>
+                        </div>
+                    </div>
+                    <div class="mainbox">
+                        <div class="inner-mainbox">
+                            <h3>영진이라서 가능합니다!</h3>
+                            <h2>전문대 최초! <br> 4년제를 넘어 석사까지</h2>
+                            <div class="swiper-pagination paginationclick"></div>
+                            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+                            <script type="text/javascript">
+                                var swiper = new Swiper(".firstSwiper", {
+                                    pagination: {
+                                        el: '.swiper-pagination',
+                                        clickable: true,
+                                    },
+                                });
+                            </script>
+                            <div class="swiperbutton">
+                                <a class="stop"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--메인배너-->
+            <div id="category">
+                <div class="category-inner">
+                    <ul class="category-left">
+                        <li><a href="#">전체</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">입학공지</a></li>
+                        <li><a href="#">장학/학자금</a></li>
+                    </ul>
+                    <ul class="category-right">
+                        <li><a href="#">
+                                <h2>[도서관] 복현캠퍼스 도서관 기말고사 운영시간 연장안내</h2>
+                                <h3>2022.05.27</h3><span>영진전문대학 도서관 학술정보지원팀입니다.도서관에서는 2022년도 1학기 기말고사 기간동안 </span>
+                            </a></li>
+                        <li><a href="#">
+                                <h2>TV캠페인 학생모델 모집공고</h2>
+                                <h3>2022.05.24</h3><span>TV캠페인 학생모델 모집공고 1. 모집인원 - 영진전문대 재학생 중 남녀 4명씩 8명 내외</span>
+                            </a></li>
+                        <li><a href="#">
+                                <h2>[도서관] 온라인 설문조사 실시 및 분석 도구 KSDC DB 이용안내</h2>
+                                <h3>2022.05.24</h3><span>도서관에서는 KSDC DB(한국사회과학데이터) 서비스 안내 및 온라인 강좌를 제공합니다. </span>
+                            </a></li>
+                        <li><a href="#">
+                                <h2>[도서관] 05월 북큐레이션(사서추천도서 및 베스트셀러) 안내</h2>
+                                <h3>2022.05.20</h3><span>영진전문대학 도서관 학술정보지원팀입니다.도서관에서는 대학 구성원들에게 교양 함양 및 독서습</span>
+                            </a></li>
+                        <li><a href="#">
+                                <h2>[교수학습지원센터] 제40회 재학생 학습법 온라인 특강 안내</h2>
+                                <h3>2022.05.16</h3><span> 제40회 재학생 학습법 온라인 특강 안내 1. 주제 : 프레젠테이션 기획과 구성 2. 강</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="midbanner">
+                <ul class="midul">
+                    <li><a href="#"><img src="./img/mid/temp_1649240365858100.png"><span> VISION 2030</span></a></li>
+                    <li><a href="#"><img src="./img/mid/temp_1649240418647100.png"><span> 산학협력단</span></a></li>
+                    <li><a href="#"><img src="./img/mid/temp_1649240473287100.png"><span> 종합인력개발센터</span></a></li>
+                    <li><a href="#"><img src="./img/mid/temp_1649240496174100.png"><span> 대구경북영어마을</span></a></li>
+                    <li><a href="#"><img src="./img/mid/temp_1649240518226100.png"><span> 종합정보시스템</span></a></li>
+                    <li><a href="#"><img src="./img/mid/temp_1649240551821100.png"><span> 구매ㆍ입찰공고</span></a></li>
+                    <li><a href="#"><img src="./img/mid/temp_1649240579276100.png"><span> 대학정보공시</span></a></li>
+                    <li><a href="#"><img src="./img/mid/temp_1649240614581100.png"><span> 증명발급</span></a></li>
+                    <li><a href="#"><img src="./img/mid/temp_1649240636546100.png"><span> 입학안내</span></a></li>
+                    <li><a href="#"><img src="./img/mid/temp_1649240659516100.png"><span> 찾아오시는길</span></a></li>
+                </ul>
+            </div>
+            <div id="pride">
+                <div class="pridetop">
+                    <a href="#">+전체보기</a>
+                    <h2 class="toph2">PRIDE OF YEUNGJIN</h2>
+                </div>
+                <ul class="prideul">
+                    <li><a href="#">
+                            <p> 취업률<br> 전국 1위 </p>
+                            <div class="img"><img src="./img/pride01.png"></div><span> 2022 교육부 발표<br> 연간 졸업생 3,000명 이상 전문대학</span>
+                        </a></li>
+                    <li><a href="#">
+                            <p> 해외취업 전국 1위<br> 최근 5년 631명 선진국 위주 취업 </p><div class="img"><img src="./img/pride02.png"></div><span> 2022 교육부 발표</span>
+                        </a></li>
+                    <li><a href="#">
+                            <p> 전국 최다 규모 장학금<br> 연평균 300여억 원 지급 </p><div class="img"><img src="./img/pride03.png"></div><span> 2021년 교육부 발표</span>
+                        </a></li>
+                    <li><a href="#">
+                            <p> 최고등급<br> 일반재정지원대학 선정 </p><div class="img"><img src="./img/pride04.png"></div><span> 2021 교육부 </span>
+                        </a></li>
+                    <li><a href="#">
+                            <p> 전문대학 최초!<br> 4년제를 넘어 석사까지<br> 교육부 마이스터대학 선정 </p><div class="img"><img src="./img/pride05.png"></div><span> 2021 교육부 </span>
+                        </a></li>
+                    <li><a href="#">
+                            <p> 전문대 유일!<br> 인공지능(AI) 및 지능형로봇 분야<br> 교육부 혁신공유대학 선정 </p><div class="img"><img src="./img/pride06.png"></div><span> 2021 교육부 선정</span>
+                        </a></li>
+                    <li><a href="#">
+                            <p> 한국에서 가장 존경받는 기업<br> 전문대학 부문 11년 연속 1위</p><div class="img"><img src="./img/pride07.png"></div><span> 2022 한국능률협회컨설팅 </span>
+                        </a></li>
+                    <li><a href="#">
+                            <p> 대기업취업 & 해외취업<br> 최근 5년 2,521명 </p><div class="img"><img src="./img/pride08.png"></div><span> 2018~2022 교육부 발표 및 <br> 건강보험가입자 기준
+                            </span>
+                        </a></li>
+                    <li><a href="#">
+                            <p> 전문대학 기관평가인증<br> 3주기 연속 ‘인증’ 취득 </p><div class="img"><img src="./img/pride09.png"></div><span> 2021 고등직업교육평가인증원 </span>
+                        </a></li>
+                    <li><a href="#">
+                            <p> 글로벌 인재양성<br> 교육국제화역량인증대학 IEQAS </p><div class="img"><img src="./img/pride10.png"></div><span> 2021 교육부·법무부 발표 </span>
+                        </a></li>
+                    <li><a href="#">
+                            <p> 전문대학 혁신지원사업<br> 자율협약형(I유형) 선정 및<br> 연차평가 A등급(최고등급) </p><div class="img"><img src="./img/pride11.png"></div><span> 2020 교육부 </span>
+                        </a></li>
+                    <li><a href="#">
+                            <p> LINC+ 사업 선정<br> 사회맞춤형 산학협력 선도전문대학<br> (1단계 매우우수, 2단계 계속지원) </p><div class="img"><img src="./img/pride12.png"></div><span> 2021 교육부
+                            </span>
+                        </a></li>
+                </ul>
+            </div>
+            <div id="news">
+                <h2 class="newsh2">언론에서 본 영진</h2>
+                <div class="head-arrow">
+                    <p id="news-prev" class="news-prev btn"><img src="./img/left.png" alt="news-prev"></p>
+                    <p id="news-next" class="news-next btn"><img src="./img/right.png" alt="news-next"></p>
+                </div>
+                <div id="news-wrap">
+                    <div id="news-carousel">
+                        <div id="news-inner">
+                            <ul class="news-column">
+                                <li><a href="#"><img src="./img/news/thumb_temp_1653265574907100.jpg">
+                                    <div class="text"><p>영진전문대, 대구아동복지협회와 산학협</p><span class="newspan">오늘경제</span><span>2022.05.27 </span></div>
+                                </a></li>
+                                <li><a href="#"><img src="./img/news/thumb_temp_1653265688042100.jpg">
+                                    <div class="text"><p>영진전문대,  LINC 3.0  선정</p><span class="newspan">파이넨셜뉴스</span><span>2022.05.27</span> </span></div>
+                                </a></li>
+                                <li><a href="#"><img src="./img/news/thumb_temp_1653265926883100.jpg">
+                                    <div class="text"><p>영진전문대, 모리아타운과 펫시터 교육</p><span class="newspan">뉴시스</span><span>2022.05.25</span></div>
+                                </a></li>
+                                <li><a href="#"><img src="./img/news/thumb_temp_1653278239676100.jpg">
+                                    <div class="text"><p>[포토] 영진전문대학교 사회복지과 성</p><span class="newspan">국제뉴스</span><span>2022.05.23</span></div>
+                                </a></li>
+                                <li><a href="#"><img src="./img/news/.jpg">
+                                    <div class="text"><p>영진전문대 사회복지과, 성인학습자 화</p><span class="newspan">국제뉴스</span><span>2022.05.22 </span></div>
+                                </a></li>
+                            </ul>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div id="photo">
+                <div class="story">
+                    <div class="topphoto">
+                        <div class="text">
+                            <h3>사진을 만나는 영진전문대학교!</h3>
+                            <h2>YEUNGJIN GALLERY</h2>
+                        </div>
+                        <div class="button-right">
+                            <button type="button">대학행사</button>
+                            <button type="button">백호체육대회</button>
+                            <button type="button">종합작품전</button>
+                            <button type="button">사이버대학교 </button>
+                        </div>
+                    </div>
+                    <ul class="bottom">
+                        <li class="bottomli"><a href="#"><img src="img/thumb_temp_1653377618977100.jpg" alt=""><p>제40회 재학생 학습법 온라인 특강</p></a></li>
+                        <li class="bottomli"><a href="#"><img src="img/thumb_temp_1653869903125100.jpg" alt=""><p>마이스터대 시범운영 사업 1차년도 성과보고회</p></a></li>
+                        <li class="bottomli"><a href="#"><img src="img/thumb_temp_1653867610545100.jpg" alt=""><p>대구아동복지협회와 상호협력 협약식</p></a></li>
+                        <li class="bottomli"><a href="#"><img src="img/thumb_temp_1653388196563100.jpg" alt=""><p>2022 외국인 유학생 한국어 말하기대회</p></a></li>
+                        <li class="bottomli"><a href="#"><img src="img/thumb_temp_1653375723641100.jpg" alt=""><p>개교 45주년  영진에서 놀자! 꿈을 찾는 도심 속 작</p></a></li>
+                        <li class="bottomli"><a href="#"><img src="img/thumb_temp_1653389324134100.jpg" alt=""><p>사회복지과 성인학습자 토요반 한마음 체육대회</p></a></li>
+                        <li class="bottomli"><a href="#"><img src="img/thumb_temp_1653377618977100.jpg" alt=""><p>2022-1학기 교수법 특강</p></a></li>
+                        <li class="bottomli"><a href="#"><img src="img/thumb_temp_1653388196563100.jpg" alt=""><p>2022 YJU 외국어 프레젠테이션 대회</p></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="media">
+                <div class="media-wrap">
+                    <div class="media-inner">
+                        <div class="media-head">
+                            <div class="head-text">
+                                <h3 class="headh3">Media of YJ!</h3>
+                                <h2 class="headh2">영진 MEDIA</h2>
+                            </div>
+                            <div class="head-arrow">
+                                <p id="carousel-prev" class="prev btn"><img src="./img/left.png" alt="prev"></p>
+                                <p id="carousel-next" class="next btn"><img src="./img/right.png" alt="next"></p>
+                            </div>
+                        </div>
+                        <div class="media-img">
+                            <div id="carousel-wrap">
+                                <div id="carousel">
+                                    <div id="carousel-inner">
+                                        <ul class="column">
+                                            <li><a href="#"><img src="./img/carousel/hqdefault.jpg">
+                                                <div class="text"><p>네가 원하는 무엇이든 될 수 있어! -영진전문대학교 홍보영화</p><span>#취업률전국1위 </span><span>#해외취업전국1위 </span><span>#영진전문대(2021.08.25.)</span></div>
+                                            </a></li>
+                                            <li><a href="#"><img src="./img/carousel/hqdefault (4).jpg">
+                                                <div class="text"><p>그래~ 될 수밖에 없잖아~ 영진인데~ 대학홍보영화</p><span>#국내대기업취업1등  </span><span>#해외취업전국1위 </span><span>#영진전문대(2021.08.25.)</span></div>
+                                            </a></li>
+                                            <li><a href="#"><img src="./img/carousel/hqdefault (1).jpg">
+                                                <div class="text"><p>영진전문대학교 홍보영화</p><span>#주문식교육의 산실 </span><span>#영진전문대학교</span></div>
+                                            </a></li>
+                                            <li><a href="#"><img src="./img/carousel/hqdefault (2).jpg">
+                                                <div class="text"><p>영진전문대에 합격한 학생이 기쁨을 온몸으로 표현하는 춤을 보고 계십니다 - 영진전문대</p><span>#주문식교육의산실  </span><span>#취업률전국1위 </span><span>#해외취업전국1위</span></div>
+                                            </a></li>
+                                            <li><a href="#"><img src="./img/carousel/hqdefault (3).jpg">
+                                                <div class="text"><p>2023학년도수시모집 입학전형안내</p><span>#국내대기업취업1등  </span><span>#해외취업1등 </span><span>#영진전문대(2021.08.25.)</span></div>
+                                            </a></li>
+                                        </ul>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media-icon">
+                            <ul>
+                                <li><a href="#"><div><img src="img/sns-face.svg"></div><span>Facebook</span> </a></li>
+                                <li><a href="#"><div><img src="img/sns-insta.svg"></div><span>instagram</span></a></li>
+                                <li><a href="#"><div><img src="img/sns-you.svg"></div><span>Youtube</span></a></li>
+                                <li><a href="#"><div><img src="img/sns-blog.svg"></div><span>Naver Blog</span></a></li>
+                                <li><a href="#"><div><img src="img/sns-cafe.svg"></div><span>Naver Cafe</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="last-item">
+                <div class="swiper mySwiper">
+                    <div class="lefttext">
+                        <p class="lastp">The first</p>
+                        <h2 class="lasth2">Mover</h2>
+                        <!-- ADD PAGINATION -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="#">
+                                <div class="swiper-text">
+                                    <p class="swiper-p">한눈에 보는 Special YJU - 대학소식지 33호 </p>
+                                    <span class="swiper-span">시대를 앞서가는 영진전문대학교의 오늘과 내일 그리고 꿈을 이뤄가는 학생들의 이야기를 담았습니다. (신년사) 유지경성有志竟成의 뜻을 새겨 임인년을 영진의 해로 만들겠습니다.
+                                        (Special YJU) 넘볼 수 없는 최고의 영광들 ...</span>
+                                </div>
+                                <div class="swiper-img">
+                                    <img src="./img/firstmove (1).jpg">
+                                </div>
+                            </a></div>
+                        <div class="swiper-slide"><a href="#">
+                                <div class="swiper-text">
+                                    <p class="swiper-p">한눈에 보는 Special YJU - 대학소식지 32호 </p>
+                                    <span class="swiper-span">The First Mover는 영진전문대학교 VIP매거진으로 시대를 앞서가는 영진전문대학교의 오늘과 내일, 꿈을 이뤄가는 학생들의 이야기를 담았습니다.  - 교육부 핵심 국고사업 2종 동시 선정! - 교육 혁신만이 미래를 이끈다! ...</span>
+                                </div>
+                                <div class="swiper-img">
+                                    <img src="./img/firstmove (1).png">
+                                </div>
+                            </a></div>
+                        <div class="swiper-slide"><a href="#">
+                                <div class="swiper-text">
+                                    <p class="swiper-p">새로운 공간에서  새로운 인재들이 탄생한다 </p>
+                                    <span class="swiper-span">새로운 공간에서 새로운 인재들이 탄생한다 강의실·실습실 등 개선 35억 원 이상 투입지속된 환경개선, 놀라운 취업 성과로 이어지다 최첨단 환경에서 공부할 수 있는 환경을 제공하기 위해 지속적인 환경개선 사업을 펼쳐온 영진전문대학교(이...</span>
+                                </div>
+                                <div class="swiper-img">
+                                    <img src="./img/firstmove (2).jpg">
+                                </div>
+                            </a></div>
+                        <div class="swiper-slide"><a href="#">
+                                <div class="swiper-text">
+                                    <p class="swiper-p">새로운 취업로드 특별한 성과를 만들다</p>
+                                    <span class="swiper-span">새로운 취업로드 특별한 성과를 만들다 제4회 2019 해외취업박람회 개최2020년 교육부 발표 해외취업자 수 157명으로 수직 상승 영진전문대학교(이하 영진)는 취업의 길을 개척하기 위해 도전을 마다하지 않는다. 2019년 제4회 해...</span>
+                                </div>
+                                <div class="swiper-img">
+                                    <img src="./img/firstmove (3).jpg">
+                                </div>
+                            </a></div>
+                    </div>
+                </div>
+                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+                <script type="text/javascript">
+                    var swiper = new Swiper(".mySwiper", {
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+                    });
+                </script>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="footertop">
+            <ul class="left-footer">
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이메일주소 무단수집거부</a></li>
+                <li><a href="#">저작권정책 및 제휴문의</a></li>
+            </ul>
+            <div class="right-footer">
+                <select class="familysite" title="유관기관사이트">
+                    <option>유관기관사이트</option>
+                    <option value="https://www.work.go.kr">워크넷</option>
+                    <option value="https://www.hrd.go.kr">HRD넷</option>
+                    <option value="https://www.naver.com">네이버</option>
+                    <option value="https://www.daum.net">다음</option>
+                </select>
+                <a href="#">이동</a>
+            </div>
+        </div>
+        <div class="footer-inner">
+            <div class="footer-logo">
+                <img src="./img/footer_logo_moel.png">
+                <img src="./img/footer_logo_keis.png">
+            </div>
+            <div class="footer-text">
+                <p>27740 충청북도 음성군 맹동면 태정로 6 한국고용정보원</p>
+                <p>국민취업지원 제도(자격조건,필요서류, 심사 등) 문의 1350 (고용부 콜센터, 유료)</p>
+                <p>국민취업지원 시스템 이용문의 kuamaster@keis.or.kr 1577-7114 (6번: 국민취업지원제도)</p>
+                <p>Copyright © 2018 고용노동부 한국고용정보원 all rights reserved.</p>
+            </div>
+            <div class="right-logo">
+                <img src="img/WA_Mark.png" alt="">
+            </div>
+        </div>
+    </footer>
+                
+</body>
+</html>
